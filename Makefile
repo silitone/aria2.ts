@@ -2,4 +2,9 @@ PROJECT=ngx
 
 BINDIR=./bin
 SRCDIR=./src
-OBJDIR=./ob
+OBJDIR=./obj
+INCDIR=./include
+TSTDIR=./test
+
+CNFLIBDIR=./config
+
