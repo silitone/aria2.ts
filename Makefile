@@ -8,3 +8,6 @@ TSTDIR=./test
 
 CNFLIBDIR=./config
 
+CNFLIB=$(CNFLIBDIR)/lib/libngxcnf.a
+
+NGXLIBS=$(CNF
