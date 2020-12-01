@@ -10,4 +10,8 @@ CNFLIBDIR=./config
 
 CNFLIB=$(CNFLIBDIR)/lib/libngxcnf.a
 
-NGXLIBS=$(CNF
+NGXLIBS=$(CNFLIB)
+NGXINCL=$(CNFLIBDIR)/include
+
+CXX=gcc
+CX
