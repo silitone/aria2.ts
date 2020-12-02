@@ -14,4 +14,4 @@ NGXLIBS=$(CNFLIB)
 NGXINCL=$(CNFLIBDIR)/include
 
 CXX=gcc
-CXXFLAGS=-g3 -std=gnu99 -I$(INCDIR) -I$(NGXINCL)
+CXXFLAGS=-g3 -std=gnu99 -I$(INCDIR) -I$(NGXINCL) -pedantic -Werror=implicit-function-declara
