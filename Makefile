@@ -15,4 +15,8 @@ NGXINCL=$(CNFLIBDIR)/include
 
 CXX=gcc
 CXXFLAGS=-g3 -std=gnu99 -I$(INCDIR) -I$(NGXINCL) -pedantic -Werror=implicit-function-declaration -Wno-overlength-strings
-CXXLIBS=-lGL -lGLU -lX
+CXXLIBS=-lGL -lGLU -lX11 -lm
+
+export
+
+SOURCES=$(wildcard $(SRCDIR)/*.c)
