@@ -20,3 +20,4 @@ CXXLIBS=-lGL -lGLU -lX11 -lm
 export
 
 SOURCES=$(wildcard $(SRCDIR)/*.c)
+OBJECTS=$(patsubst $(SRCDIR)/%,$(OBJDIR)/%,$(patsubst %.c,%.o,$(S
