@@ -24,4 +24,4 @@ OBJECTS=$(patsubst $(SRCDIR)/%,$(OBJDIR)/%,$(patsubst %.c,%.o,$(SOURCES))) $(NGX
 
 .PHONY: clean run test conflib
 
-all: $
+all: $(BINDIR) $(OBJDIR) $(BINDIR)/$(PROJECT) $(BINDIR)
