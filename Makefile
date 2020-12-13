@@ -27,4 +27,5 @@ OBJECTS=$(patsubst $(SRCDIR)/%,$(OBJDIR)/%,$(patsubst %.c,%.o,$(SOURCES))) $(NGX
 all: $(BINDIR) $(OBJDIR) $(BINDIR)/$(PROJECT) $(BINDIR)/ngxfl $(BINDIR)/ngxData $(BINDIR)/ngxls $(BINDIR)/ngxTree $(BINDIR)/ngxar conflib
 	@echo "Done!"
 
-run: $(BIN
+run: $(BINDIR) $(OBJDIR) $(BINDIR)/$(PROJECT)
+	$(BINDIR)/$(
