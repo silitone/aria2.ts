@@ -28,4 +28,9 @@ all: $(BINDIR) $(OBJDIR) $(BINDIR)/$(PROJECT) $(BINDIR)/ngxfl $(BINDIR)/ngxData 
 	@echo "Done!"
 
 run: $(BINDIR) $(OBJDIR) $(BINDIR)/$(PROJECT)
-	$(BINDIR)/$(
+	$(BINDIR)/$(PROJECT)
+
+clean:
+	rm -rvf $(BINDIR)/
+	rm -rvf $(OBJDIR)/
+	make 
