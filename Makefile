@@ -33,4 +33,6 @@ run: $(BINDIR) $(OBJDIR) $(BINDIR)/$(PROJECT)
 clean:
 	rm -rvf $(BINDIR)/
 	rm -rvf $(OBJDIR)/
-	make 
+	make -C $(CNFLIBDIR) clean
+
+test: $(BINDIR)/ngxD
