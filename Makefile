@@ -35,4 +35,5 @@ clean:
 	rm -rvf $(OBJDIR)/
 	make -C $(CNFLIBDIR) clean
 
-test: $(BINDIR)/ngxD
+test: $(BINDIR)/ngxData $(BINDIR)/ngxls $(BINDIR)/ngxTree $(BINDIR)/ngxar
+	r
