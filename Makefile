@@ -36,4 +36,6 @@ clean:
 	make -C $(CNFLIBDIR) clean
 
 test: $(BINDIR)/ngxData $(BINDIR)/ngxls $(BINDIR)/ngxTree $(BINDIR)/ngxar
-	r
+	rm -fv test.ngx
+	rm -fv src.ngx
+	$(BINDIR)/ngx
