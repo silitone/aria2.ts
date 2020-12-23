@@ -41,4 +41,7 @@ test: $(BINDIR)/ngxData $(BINDIR)/ngxls $(BINDIR)/ngxTree $(BINDIR)/ngxar
 	$(BINDIR)/ngxData test.ngx
 	$(BINDIR)/ngxTree test.ngx
 	$(BINDIR)/ngxls test.ngx
-	$(BINDIR)/ngxar src.ngx src/*.c in
+	$(BINDIR)/ngxar src.ngx src/*.c include/*.h test/*.c
+	make -C $(CNFLIBDIR) test
+
+conflib: $(
