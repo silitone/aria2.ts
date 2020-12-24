@@ -48,3 +48,5 @@ conflib: $(CNFLIB)
 
 $(BINDIR) $(OBJDIR):
 	mkdir -v $@
+
+$(BINDIR)/ngxData: $(OBJECTS) $(TSTDI
