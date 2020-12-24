@@ -44,4 +44,7 @@ test: $(BINDIR)/ngxData $(BINDIR)/ngxls $(BINDIR)/ngxTree $(BINDIR)/ngxar
 	$(BINDIR)/ngxar src.ngx src/*.c include/*.h test/*.c
 	make -C $(CNFLIBDIR) test
 
-conflib: $(
+conflib: $(CNFLIB)
+
+$(BINDIR) $(OBJDIR):
+	mkdir -v $@
