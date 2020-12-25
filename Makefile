@@ -49,4 +49,7 @@ conflib: $(CNFLIB)
 $(BINDIR) $(OBJDIR):
 	mkdir -v $@
 
-$(BINDIR)/ngxData: $(OBJECTS) $(TSTDI
+$(BINDIR)/ngxData: $(OBJECTS) $(TSTDIR)/ngxData.c
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(CXXLIBS)
+
+$(
