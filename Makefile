@@ -59,4 +59,6 @@ $(BINDIR)/ngxar: $(OBJECTS) $(TSTDIR)/ngxar.c
 	$(CXX) $(CXXFLAGS) -o $@ $^ $(CXXLIBS)
 
 $(BINDIR)/ngxTree: $(OBJECTS) $(TSTDIR)/ngxTree.c
-	$(CXX) $(CXXFLAGS) -o $@ $^ $(CXXLIB
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(CXXLIBS)
+
+$(BINDIR)/$(PROJECT): $(OBJECTS) $(PROJE
