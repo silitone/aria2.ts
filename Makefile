@@ -58,4 +58,5 @@ $(BINDIR)/ngxls: $(OBJECTS) $(TSTDIR)/ngxls.c
 $(BINDIR)/ngxar: $(OBJECTS) $(TSTDIR)/ngxar.c
 	$(CXX) $(CXXFLAGS) -o $@ $^ $(CXXLIBS)
 
-$(BINDIR)/ngxTree: $(OBJECT
+$(BINDIR)/ngxTree: $(OBJECTS) $(TSTDIR)/ngxTree.c
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(CXXLIB
