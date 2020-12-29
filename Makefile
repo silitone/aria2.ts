@@ -62,4 +62,6 @@ $(BINDIR)/ngxTree: $(OBJECTS) $(TSTDIR)/ngxTree.c
 	$(CXX) $(CXXFLAGS) -o $@ $^ $(CXXLIBS)
 
 $(BINDIR)/$(PROJECT): $(OBJECTS) $(PROJECT)/entry.c
-	$(CXX) $(CXXFLAGS) -o $@ $^ 
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(CXXLIBS)
+
+$(BINDIR)/ngxfl: $(OBJECTS) flx/junks.c flx/font
