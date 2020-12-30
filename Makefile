@@ -64,4 +64,5 @@ $(BINDIR)/ngxTree: $(OBJECTS) $(TSTDIR)/ngxTree.c
 $(BINDIR)/$(PROJECT): $(OBJECTS) $(PROJECT)/entry.c
 	$(CXX) $(CXXFLAGS) -o $@ $^ $(CXXLIBS)
 
-$(BINDIR)/ngxfl: $(OBJECTS) flx/junks.c flx/font
+$(BINDIR)/ngxfl: $(OBJECTS) flx/junks.c flx/font.c flx/cell.c flx/flx.c
+	$(CXX) $(CXXFLAGS) -o $@ $^ $
