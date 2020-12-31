@@ -65,4 +65,7 @@ $(BINDIR)/$(PROJECT): $(OBJECTS) $(PROJECT)/entry.c
 	$(CXX) $(CXXFLAGS) -o $@ $^ $(CXXLIBS)
 
 $(BINDIR)/ngxfl: $(OBJECTS) flx/junks.c flx/font.c flx/cell.c flx/flx.c
-	$(CXX) $(CXXFLAGS) -o $@ $^ $
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(CXXLIBS)
+
+$(OBJDIR)/%.o: $(SRCDIR)/%.c
+	$(CXX)
