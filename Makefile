@@ -71,4 +71,4 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.c
 	$(CXX) -c $(CXXFLAGS) -o $@ $<
 
 $(CNFLIB):
-	$(MAKE) -C $(CNF
+	$(MAKE) -C $(CNFLIBDIR)
