@@ -9,4 +9,4 @@ Project is under heavy development!
        src="https://scan.coverity.com/projects/12012/badge.svg"/>
 </a>
 
-Project cons
+Project consists of several low-level algoritms for general g
