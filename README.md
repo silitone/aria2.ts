@@ -9,4 +9,5 @@ Project is under heavy development!
        src="https://scan.coverity.com/projects/12012/badge.svg"/>
 </a>
 
-Project consists of several low-level algoritms for general g
+Project consists of several low-level algoritms for general game development 
+and provides test and exam
