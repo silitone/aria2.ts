@@ -10,4 +10,4 @@ Project is under heavy development!
 </a>
 
 Project consists of several low-level algoritms for general game development 
-and provides test and exam
+and provides test and examples of their usage in form of turn-base 
