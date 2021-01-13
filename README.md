@@ -10,4 +10,9 @@ Project is under heavy development!
 </a>
 
 Project consists of several low-level algoritms for general game development 
-and provides test and examples of their usage in form of turn-base 
+and provides test and examples of their usage in form of turn-base tactical 
+strategy game.
+
+## Overview
+
+This is pet project, main
