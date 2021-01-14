@@ -15,4 +15,4 @@ strategy game.
 
 ## Overview
 
-This is pet project, main
+This is pet project, main idea is to develop several solutions for common ta
