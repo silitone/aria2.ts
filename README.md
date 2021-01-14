@@ -15,4 +15,5 @@ strategy game.
 
 ## Overview
 
-This is pet project, main idea is to develop several solutions for common ta
+This is pet project, main idea is to develop several solutions for common task
+appearing in indie game development. Tools are built with crossplatf
