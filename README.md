@@ -16,4 +16,10 @@ strategy game.
 ## Overview
 
 This is pet project, main idea is to develop several solutions for common task
-appearing in indie game development. Tools are built with crossplatf
+appearing in indie game development. Tools are built with crossplatform in mind.
+
+## Language
+
+Main language is plain C99.
+
+## St
