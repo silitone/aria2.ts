@@ -22,4 +22,6 @@ appearing in indie game development. Tools are built with crossplatform in mind.
 
 Main language is plain C99.
 
-## St
+## Standard way to code
+
+Nevertheless I am using 
