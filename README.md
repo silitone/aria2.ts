@@ -24,4 +24,7 @@ Main language is plain C99.
 
 ## Standard way to code
 
-Nevertheless I am using C99 as main language, the code is defined i
+Nevertheless I am using C99 as main language, the code is defined in terms of 
+"entities" AKA classes and objects.
+
+Headers declares 
