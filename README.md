@@ -24,4 +24,4 @@ Main language is plain C99.
 
 ## Standard way to code
 
-Nevertheless I am using 
+Nevertheless I am using C99 as main language, the code is defined i
