@@ -27,4 +27,5 @@ Main language is plain C99.
 Nevertheless I am using C99 as main language, the code is defined in terms of 
 "entities" AKA classes and objects.
 
-Headers declares only pointers to structures and all functions related to
+Headers declares only pointers to structures and all functions related to 
+this structure get a pointer as first argument. A
