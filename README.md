@@ -29,4 +29,8 @@ Nevertheless I am using C99 as main language, the code is defined in terms of
 
 Headers declares only pointers to structures and all functions related to 
 this structure get a pointer as first argument. Actual structures are defined
-inside its' respective compila
+inside its' respective compilation units.
+
+```c
+// entity.h
+typedef struct ngx_e
