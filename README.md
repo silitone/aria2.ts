@@ -33,4 +33,6 @@ inside its' respective compilation units.
 
 ```c
 // entity.h
-typedef struct ngx_e
+typedef struct ngx_entity_t* NGXENTITY;
+
+NGXENTITY ngxEntityInit();
