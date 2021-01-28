@@ -35,4 +35,6 @@ inside its' respective compilation units.
 // entity.h
 typedef struct ngx_entity_t* NGXENTITY;
 
-NGXENTITY ngxEntityInit();
+NGXENTITY ngxEntityInit(); // Standard way to create new object
+
+void ngx
