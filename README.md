@@ -37,4 +37,4 @@ typedef struct ngx_entity_t* NGXENTITY;
 
 NGXENTITY ngxEntityInit(); // Standard way to create new object
 
-void ngx
+void ngxEntityCleanup(NGXENTITY* entity); // Standard way to destr
