@@ -38,4 +38,7 @@ typedef struct ngx_entity_t* NGXENTITY;
 NGXENTITY ngxEntityInit(); // Standard way to create new object
 
 void ngxEntityCleanup(NGXENTITY* entity); // Standard way to destroy object. 
-                                
+                                          // Cleanup function zeroes pointer.
+
+// entity.c
+str
