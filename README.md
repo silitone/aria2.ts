@@ -41,4 +41,10 @@ void ngxEntityCleanup(NGXENTITY* entity); // Standard way to destroy object.
                                           // Cleanup function zeroes pointer.
 
 // entity.c
-str
+struct ngx_entity_t {
+  // Actual data definitions.
+};
+
+```
+
+## NGXDE
