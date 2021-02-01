@@ -53,4 +53,5 @@ Rendering device.
 
 ## NGXARC
 
-Data archive. Archive suppo
+Data archive. Archive supports block sizes up to USHRT_MAX and total block count 
+up
