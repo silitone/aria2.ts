@@ -47,4 +47,10 @@ struct ngx_entity_t {
 
 ```
 
-## NGXDE
+## NGXDEVICE
+
+Rendering device.
+
+## NGXARC
+
+Data archive. Archive suppo
