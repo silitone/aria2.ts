@@ -54,4 +54,6 @@ Rendering device.
 ## NGXARC
 
 Data archive. Archive supports block sizes up to USHRT_MAX and total block count 
-up
+up to (USHRT_MAX-1). 0xFFFF block is used as error.
+
+## NGXB
