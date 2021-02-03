@@ -56,4 +56,6 @@ Rendering device.
 Data archive. Archive supports block sizes up to USHRT_MAX and total block count 
 up to (USHRT_MAX-1). 0xFFFF block is used as error.
 
-## NGXB
+## NGXBLK
+
+Single data block. Archive format supports a lot of 
