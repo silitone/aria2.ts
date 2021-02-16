@@ -58,4 +58,5 @@ up to (USHRT_MAX-1). 0xFFFF block is used as error.
 
 ## NGXBLK
 
-Single data block. Archive format supports a lot of 
+Single data block. Archive format supports a lot of block sizes, but now I am 
+using only blocks
