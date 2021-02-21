@@ -60,4 +60,7 @@ up to (USHRT_MAX-1). 0xFFFF block is used as error.
 
 Single data block. Archive format supports a lot of block sizes, but now I am 
 using only blocks of 512 bytes. The first two bytes are used as pointer to 
-the next block in data chain. If equals to 0xFFFF, than c
+the next block in data chain. If equals to 0xFFFF, than current block is 
+the last block in chain.
+
+## NGXINDE
