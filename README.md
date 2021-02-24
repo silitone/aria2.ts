@@ -63,4 +63,6 @@ using only blocks of 512 bytes. The first two bytes are used as pointer to
 the next block in data chain. If equals to 0xFFFF, than current block is 
 the last block in chain.
 
-## NGXINDE
+## NGXINDEX
+
+Linear array of unique key-value pairs. Used to store data na
