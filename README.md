@@ -65,4 +65,8 @@ the last block in chain.
 
 ## NGXINDEX
 
-Linear array of unique key-value pairs. Used to store data na
+Linear array of unique key-value pairs. Used to store data names and block ids
+
+## NGXMODEL
+
+Simple binary model file.
