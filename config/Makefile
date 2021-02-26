@@ -3,4 +3,9 @@ LIBDIR=./lib
 NGXCNF=libngxcnf.a
 OBJDIR=./obj
 SRCDIR=./src
-INCDIR=./i
+INCDIR=./include
+
+FLEX=flex
+BISON=bison
+
+SRCYCC=$(SRCDIR)/config.y
