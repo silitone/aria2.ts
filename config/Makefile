@@ -11,4 +11,5 @@ BISON=bison
 SRCYCC=$(SRCDIR)/config.y
 SRCLEX=$(SRCDIR)/config.lex
 
-SOURCES=$(wildcard $(SRCDIR)/*.
+SOURCES=$(wildcard $(SRCDIR)/*.c) $(SRCDIR)/config.tab.c $(SRCDIR)/config.c
+OBJECTS=$(p
