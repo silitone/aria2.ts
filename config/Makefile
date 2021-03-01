@@ -9,3 +9,6 @@ FLEX=flex
 BISON=bison
 
 SRCYCC=$(SRCDIR)/config.y
+SRCLEX=$(SRCDIR)/config.lex
+
+SOURCES=$(wildcard $(SRCDIR)/*.
