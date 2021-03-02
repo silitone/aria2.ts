@@ -12,4 +12,7 @@ SRCYCC=$(SRCDIR)/config.y
 SRCLEX=$(SRCDIR)/config.lex
 
 SOURCES=$(wildcard $(SRCDIR)/*.c) $(SRCDIR)/config.tab.c $(SRCDIR)/config.c
-OBJECTS=$(patsubst $(SRCDIR)/%,$(OBJDIR)/%,$(patsubst %.c,%.o,$
+OBJECTS=$(patsubst $(SRCDIR)/%,$(OBJDIR)/%,$(patsubst %.c,%.o,$(SOURCES)))
+
+CNFTST=./test/cnf
+TSTTRR=./test/testct
