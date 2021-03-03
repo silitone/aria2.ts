@@ -16,3 +16,7 @@ OBJECTS=$(patsubst $(SRCDIR)/%,$(OBJDIR)/%,$(patsubst %.c,%.o,$(SOURCES)))
 
 CNFTST=./test/cnf
 TSTTRR=./test/testct
+
+.PHONY: clean test
+
+all: $(LIBDIR) $(OBJDIR) $(LIBDIR)/$(
