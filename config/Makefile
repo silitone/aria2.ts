@@ -23,4 +23,7 @@ all: $(LIBDIR) $(OBJDIR) $(LIBDIR)/$(NGXCNF)
 	@echo "Done with $(NGXCNF)"
 
 clean:
-	rm -rfv $(OBJ
+	rm -rfv $(OBJDIR)
+	rm -rfv $(LIBDIR)
+	rm -rfv $(CNFTST)
+	rm -rvf $(
