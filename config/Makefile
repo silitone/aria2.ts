@@ -19,4 +19,8 @@ TSTTRR=./test/testct
 
 .PHONY: clean test
 
-all: $(LIBDIR) $(OBJDIR) $(LIBDIR)/$(
+all: $(LIBDIR) $(OBJDIR) $(LIBDIR)/$(NGXCNF)
+	@echo "Done with $(NGXCNF)"
+
+clean:
+	rm -rfv $(OBJ
