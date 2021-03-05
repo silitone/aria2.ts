@@ -26,4 +26,5 @@ clean:
 	rm -rfv $(OBJDIR)
 	rm -rfv $(LIBDIR)
 	rm -rfv $(CNFTST)
-	rm -rvf $(
+	rm -rvf $(SRCDIR)/config.tab.c
+	rm -rvf $(INCDIR)/confi
