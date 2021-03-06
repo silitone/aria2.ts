@@ -29,4 +29,7 @@ clean:
 	rm -rvf $(SRCDIR)/config.tab.c
 	rm -rvf $(INCDIR)/config.tab.h
 	rm -rvf $(SRCDIR)/config.c
-	rm -rvf $(INC
+	rm -rvf $(INCDIR)/config.h
+
+test: $(CNFTST) $(TSTTRR)
+#	cat .
