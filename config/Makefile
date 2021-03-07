@@ -35,4 +35,6 @@ test: $(CNFTST) $(TSTTRR)
 #	cat ./test/config.txt | $(CNFTST)
 	$(TSTTRR)
 
-$(CNFTST): $
+$(CNFTST): $(CNFTST).c $(LIBDIR)/$(NGXCNF)
+	$(CXX) $(CXXFLAGS) -o $@ $^
+
