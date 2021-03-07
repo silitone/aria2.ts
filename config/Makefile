@@ -32,4 +32,7 @@ clean:
 	rm -rvf $(INCDIR)/config.h
 
 test: $(CNFTST) $(TSTTRR)
-#	cat .
+#	cat ./test/config.txt | $(CNFTST)
+	$(TSTTRR)
+
+$(CNFTST): $
