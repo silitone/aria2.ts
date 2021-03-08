@@ -38,3 +38,5 @@ test: $(CNFTST) $(TSTTRR)
 $(CNFTST): $(CNFTST).c $(LIBDIR)/$(NGXCNF)
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
+$(TSTTRR): $(TSTTRR).c $(LIBDIR)/$(NGXCNF)
+	$(CXX
