@@ -44,4 +44,7 @@ $(TSTTRR): $(TSTTRR).c $(LIBDIR)/$(NGXCNF)
 $(OBJDIR) $(LIBDIR):
 	mkdir $@
 
-$(LIBD
+$(LIBDIR)/$(NGXCNF): $(OBJECTS)
+	ar rcs $@ $^
+
+$(OBJDIR)/%
