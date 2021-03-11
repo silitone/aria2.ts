@@ -39,4 +39,9 @@ $(CNFTST): $(CNFTST).c $(LIBDIR)/$(NGXCNF)
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
 $(TSTTRR): $(TSTTRR).c $(LIBDIR)/$(NGXCNF)
-	$(CXX
+	$(CXX) $(CXXFLAGS) -o $@ $^
+
+$(OBJDIR) $(LIBDIR):
+	mkdir $@
+
+$(LIBD
