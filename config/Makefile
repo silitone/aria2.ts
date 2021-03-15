@@ -47,4 +47,7 @@ $(OBJDIR) $(LIBDIR):
 $(LIBDIR)/$(NGXCNF): $(OBJECTS)
 	ar rcs $@ $^
 
-$(OBJDIR)/%
+$(OBJDIR)/%.o: $(SRCDIR)/%.c
+	$(CXX) -c $(CXXFLAGS) -o $@ $<
+
+$(OBJD
