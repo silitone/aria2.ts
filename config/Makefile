@@ -50,4 +50,4 @@ $(LIBDIR)/$(NGXCNF): $(OBJECTS)
 $(OBJDIR)/%.o: $(SRCDIR)/%.c
 	$(CXX) -c $(CXXFLAGS) -o $@ $<
 
-$(OBJD
+$(OBJDIR)/%.tab.o: $(SRCDIR)/%.tab.c $(INCDIR)/conf
