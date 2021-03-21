@@ -53,4 +53,4 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.c
 $(OBJDIR)/%.tab.o: $(SRCDIR)/%.tab.c $(INCDIR)/config.h
 	$(CXX) -c $(CXXFLAGS) -o $@ $<
 
-$(SRCDIR)/
+$(SRCDIR)/config.tab.c $(INCDIR)/config.tab.h: $(SRCYCC) $(SRCDIR)/conf
