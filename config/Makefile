@@ -56,4 +56,6 @@ $(OBJDIR)/%.tab.o: $(SRCDIR)/%.tab.c $(INCDIR)/config.h
 $(SRCDIR)/config.tab.c $(INCDIR)/config.tab.h: $(SRCYCC) $(SRCDIR)/config.c
 	$(BISON) -d $(SRCYCC)
 	mv config.tab.c $(SRCDIR)
-	
+	mv config.tab.h $(INCDIR)
+
+$(SRCDIR)/config.c: $(SRCLEX)
