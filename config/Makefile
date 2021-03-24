@@ -59,4 +59,4 @@ $(SRCDIR)/config.tab.c $(INCDIR)/config.tab.h: $(SRCYCC) $(SRCDIR)/config.c
 	mv config.tab.h $(INCDIR)
 
 $(SRCDIR)/config.c: $(SRCLEX)
-	$(FLEX) -o $(SRCDIR)/config.c --header-file=$(INCDIR)
+	$(FLEX) -o $(SRCDIR)/config.c --header-file=$(INCDIR)/config.h $(SRCLEX)
