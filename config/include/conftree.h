@@ -57,3 +57,13 @@ void ngxCTPairCleanup(NGXCTPAIR* pair);
  */
 double ngxCTPairAsNumber(const NGXCTPAIR pair);
 
+
+
+/**
+ * Add kv-pair to the tree.
+ */
+int ngxCTreeAppend(NGXCTREE ctree, NGXCTPAIR pair);
+
+
+
+#endif /* __CONFIG_TREE_HEADER__ */
