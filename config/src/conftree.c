@@ -3,4 +3,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-typedef struct config_pair
+typedef struct config_pair_t config_pair_t;
+
+typedef struct conf_numb
