@@ -5,4 +5,7 @@
 
 typedef struct config_pair_t config_pair_t;
 
-typedef struct conf_numb
+typedef struct conf_number_t {
+  int type;
+  double val;
+} conf_number_t;
