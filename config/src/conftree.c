@@ -9,3 +9,7 @@ typedef struct conf_number_t {
   int type;
   double val;
 } conf_number_t;
+
+typedef struct conf_string_t {
+  int type;
+  cha
