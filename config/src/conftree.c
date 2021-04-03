@@ -12,4 +12,7 @@ typedef struct conf_number_t {
 
 typedef struct conf_string_t {
   int type;
-  cha
+  char* val;
+} conf_string_t;
+
+typedef struct conf_block_t
