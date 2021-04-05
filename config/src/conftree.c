@@ -15,4 +15,9 @@ typedef struct conf_string_t {
   char* val;
 } conf_string_t;
 
-typedef struct conf_block_t
+typedef struct conf_block_t {
+  int type;
+  config_pair_t* val;
+} conf_block_t;
+
+typedef 
