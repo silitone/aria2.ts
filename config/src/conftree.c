@@ -20,4 +20,7 @@ typedef struct conf_block_t {
   config_pair_t* val;
 } conf_block_t;
 
-typedef 
+typedef union config_value_t {
+  int type;
+  conf_number_t num;
+  conf
