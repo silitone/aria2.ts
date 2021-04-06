@@ -23,4 +23,8 @@ typedef struct conf_block_t {
 typedef union config_value_t {
   int type;
   conf_number_t num;
-  conf
+  conf_string_t str;
+  conf_block_t blk;
+} config_value_t;
+
+struct confi
