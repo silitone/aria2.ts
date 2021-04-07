@@ -27,4 +27,7 @@ typedef union config_value_t {
   conf_block_t blk;
 } config_value_t;
 
-struct confi
+struct config_pair_t {
+  char* key;
+  config_value_t val;
+  config_pair_t* l;
