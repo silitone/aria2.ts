@@ -31,3 +31,9 @@ struct config_pair_t {
   char* key;
   config_value_t val;
   config_pair_t* l;
+  config_pair_t* r;
+  int c;
+};
+
+struct config_tree_t {
+  c
