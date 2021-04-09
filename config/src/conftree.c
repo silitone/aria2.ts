@@ -36,4 +36,7 @@ struct config_pair_t {
 };
 
 struct config_tree_t {
-  c
+  config_pair_t root;
+};
+
+void ngxCTreePairInit(config_pa
