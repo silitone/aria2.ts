@@ -39,4 +39,6 @@ struct config_tree_t {
   config_pair_t root;
 };
 
-void ngxCTreePairInit(config_pa
+void ngxCTreePairInit(config_pair_t* pr) {
+  pr->key = 0;
+  pr->val.type 
