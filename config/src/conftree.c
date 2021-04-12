@@ -41,4 +41,7 @@ struct config_tree_t {
 
 void ngxCTreePairInit(config_pair_t* pr) {
   pr->key = 0;
-  pr->val.type 
+  pr->val.type = CT_UND;
+  pr->val.num.val = 0.0;
+  pr->l = 0;
+  pr->r = 0
