@@ -44,4 +44,9 @@ void ngxCTreePairInit(config_pair_t* pr) {
   pr->val.type = CT_UND;
   pr->val.num.val = 0.0;
   pr->l = 0;
-  pr->r = 0
+  pr->r = 0;
+  pr->c = 0;
+}
+
+NGXCTREE ngxCTreeInit() {
+  NGX
