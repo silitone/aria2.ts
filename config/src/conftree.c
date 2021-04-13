@@ -49,4 +49,4 @@ void ngxCTreePairInit(config_pair_t* pr) {
 }
 
 NGXCTREE ngxCTreeInit() {
-  NGX
+  NGXCTREE result = malloc(sizeof(struct config_tree_t))
