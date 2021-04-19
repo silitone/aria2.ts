@@ -3,4 +3,6 @@
 #include <config.tab.h>
 #include <config.h>
 
-int main
+int main(int argc, char* argv[]){
+  yyscan_t scanner;
+  yylex_ini
