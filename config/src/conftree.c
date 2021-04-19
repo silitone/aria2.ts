@@ -58,4 +58,8 @@ NGXCTREE ngxCTreeInit() {
 }
 
 void ngxCTreeCleanup(NGXCTREE* ctree) {
-  if ((ctree != 0) && (*ctr
+  if ((ctree != 0) && (*ctree != 0)) {
+    free(*ctree);
+    *ctree = 0;
+  }
+}
