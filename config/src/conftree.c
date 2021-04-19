@@ -53,4 +53,8 @@ NGXCTREE ngxCTreeInit() {
   if (result == 0){
     return 0;
   }
-  ngxCTreePairInit(&(result
+  ngxCTreePairInit(&(result->root));
+  return result;
+}
+
+void ngxCTreeCle
