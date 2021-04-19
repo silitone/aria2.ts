@@ -5,4 +5,6 @@
 
 int main(int argc, char* argv[]){
   yyscan_t scanner;
-  yylex_ini
+  yylex_init(&scanner);
+  yyparse(scanner);
+  yylex_d
