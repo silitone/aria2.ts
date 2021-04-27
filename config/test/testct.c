@@ -5,4 +5,7 @@
 
 #define EXPECT(cond) \
   if (!(cond)){\
-    fprintf(stderr, "ERROR: %s at %s:%d\n", #cond
+    fprintf(stderr, "ERROR: %s at %s:%d\n", #cond, __FILE__, __LINE__);\
+    exit(-1);\
+  } else {\
+    prin
