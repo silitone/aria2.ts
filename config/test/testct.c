@@ -12,4 +12,6 @@
   }
 
 int main(int argc, char* argv[]){
-  NGXCTREE tree =
+  NGXCTREE tree = ngxCTreeInit();
+  EXPECT(tree != 0);
+  ngxCTreeCle
