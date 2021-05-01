@@ -8,4 +8,8 @@
     fprintf(stderr, "ERROR: %s at %s:%d\n", #cond, __FILE__, __LINE__);\
     exit(-1);\
   } else {\
-    printf("EXPECTED: %s at %s:%d\n", #cond, __FILE__, __LINE__
+    printf("EXPECTED: %s at %s:%d\n", #cond, __FILE__, __LINE__);\
+  }
+
+int main(int argc, char* argv[]){
+  NGXCTREE tree =
