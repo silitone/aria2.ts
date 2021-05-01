@@ -8,4 +8,4 @@
     fprintf(stderr, "ERROR: %s at %s:%d\n", #cond, __FILE__, __LINE__);\
     exit(-1);\
   } else {\
-    prin
+    printf("EXPECTED: %s at %s:%d\n", #cond, __FILE__, __LINE__
