@@ -19,4 +19,8 @@ static const struct {
 };
 
 uint32_t flCellWidth() {
-  return flCellP
+  return flCellPattern.width;
+}
+
+uint32_t flCellHeight() {
+  return flC
