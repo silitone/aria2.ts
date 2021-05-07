@@ -23,4 +23,7 @@ uint32_t flCellWidth() {
 }
 
 uint32_t flCellHeight() {
-  return flC
+  return flCellPattern.height;
+}
+
+const uint8_t* flCe
