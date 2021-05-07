@@ -5,4 +5,7 @@
 #include <stdint.h>
 
 uint32_t flCellWidth();
-uint32_t flCellHei
+uint32_t flCellHeight();
+const uint8_t* flCellPixels();
+
+#endif /* __F
