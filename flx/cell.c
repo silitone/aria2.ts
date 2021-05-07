@@ -27,4 +27,5 @@ uint32_t flCellHeight() {
 }
 
 const uint8_t* flCellPixels() {
-  return flCellPattern.pixel_da
+  return flCellPattern.pixel_data;
+}
