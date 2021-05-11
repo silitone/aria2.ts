@@ -31,3 +31,64 @@ unsigned int font = 0;
 const char* text = "FLX v.0.0.1 by masscry";
 
 void Render(double dt, void* ptr) {
+
+    ngxSetupTexture(grass);
+    for (int y = 0; y < 60; ++y) {
+        for (int x = 0; x < 80; ++x) {
+            ngxQuad(x * 8.0, y * 8.0, 8.0, 8.0);
+        }
+    }
+
+    ngxSetupTexture(font);
+    int tlen = strlen(text);
+    for (int i = 0; i < tlen; ++i) {
+        ngxSprite(i * 8.0, 0.0, 8.0, 8.0, &fontSpr, text[i]);
+    }
+
+    int loop = ngxIsKeyDown(dev, NGX_RIGHT) || ngxIsKeyDown(dev, NGX_LEFT)
+            || ngxIsKeyDown(dev, NGX_DOWN) || ngxIsKeyDown(dev, NGX_UP);
+
+    int croch = ngxIsKeyDown(dev, NGX_CTRL);
+
+    int run = ngxIsKeyDown(dev, NGX_SHIFT);
+
+    ngxSetupTexture(ptex);
+    ngxSprite(player.x, player.y, 32, 32, &spr, player.f);
+
+    player.timeout += dt;
+
+    if (croch) {
+        player.f = 3;
+    } else {
+
+        player.x += (ngxIsKeyDown(dev, NGX_RIGHT) - ngxIsKeyDown(dev, NGX_LEFT)) * dt * (100.0 + 100.0 * run);
+        player.y += (ngxIsKeyDown(dev, NGX_DOWN) - ngxIsKeyDown(dev, NGX_UP)) * dt * (100.0 + 100.0 * run);
+
+        if (player.x > 640 - 32) {
+            player.x = 640 - 32;
+        }
+
+        if (player.x < 0) {
+            player.x = 0;
+        }
+
+        if (player.y > 480 - 32) {
+            player.y = 480 - 32;
+        }
+
+        if (player.y < 0) {
+            player.y = 0;
+        }
+
+        if (loop) {
+            if (player.timeout > 0.1 - 0.05 * run) {
+                player.f = !player.f;
+                player.timeout = 0.0;
+            }
+        } else {
+            player.f = 2;
+        }
+    }
+}
+
+void Keys(int key, void* ptr) {
