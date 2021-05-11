@@ -92,3 +92,51 @@ void Render(double dt, void* ptr) {
 }
 
 void Keys(int key, void* ptr) {
+    NGXDEVICE dev = (NGXDEVICE) ptr;
+    switch (key) {
+        case NGX_ESC:
+            ngxShutdown(dev);
+            break;
+            //        default:
+            //            printf("key: %d\n", key);
+    }
+}
+
+void Load(int load, void* ptr) {
+    if (load != 0) {
+        spr.sx = 4;
+        spr.sy = 4;
+
+        fontSpr.sx = 16;
+        fontSpr.sy = 16;
+
+        player.x = 320 - 16;
+        player.y = 240 - 16;
+
+        ptex = ngxTexture(flJunksWidth(), flJunksHeight(), flJunksPixels());
+        grass = ngxTexture(flCellWidth(), flCellHeight(), flCellPixels());
+        font = ngxTexture(flFontWidth(), flFontHeight(), flFontPixels());
+    } else {
+        ngxDeleteTexture(font);
+        ngxDeleteTexture(ptex);
+        ngxDeleteTexture(grass);
+    }
+}
+
+int main(int argc, char* argv[]) {
+    dev = ngxInit();
+
+    if (dev == 0) {
+        return -1;
+    }
+
+    ngxDrawFunc(dev, Render);
+    ngxKeyFunc(dev, Keys);
+    ngxLoadResourcesFunc(dev, Load);
+    ngxPointer(dev, dev);
+    ngxSetPerspective(dev, 2);
+    ngxSetResolution(dev, 1280, 960);
+
+    while (ngxUpdate(dev) != 0) {
+        ;
+    }
