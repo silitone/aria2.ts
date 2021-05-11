@@ -140,3 +140,7 @@ int main(int argc, char* argv[]) {
     while (ngxUpdate(dev) != 0) {
         ;
     }
+
+    ngxCleanup(&dev);
+    return 0;
+}
