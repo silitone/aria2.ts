@@ -168,3 +168,13 @@ static const struct {
 };
 
 uint32_t flJunksWidth() {
+  return junks.width;
+}
+
+uint32_t flJunksHeight() {
+  return junks.height;
+}
+
+const uint8_t* flJunksPixels() {
+  return junks.pixel_data;
+}
