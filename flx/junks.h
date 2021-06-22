@@ -1,3 +1,7 @@
 #pragma once
 #ifndef __FL_JUNKS_HEADER__
-#def
+#define __FL_JUNKS_HEADER__
+
+#include <stdint.h>
+
+uint32_t 
