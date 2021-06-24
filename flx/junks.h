@@ -4,4 +4,6 @@
 
 #include <stdint.h>
 
-uint32_t 
+uint32_t flJunksWidth();
+uint32_t flJunksHeight();
+c
