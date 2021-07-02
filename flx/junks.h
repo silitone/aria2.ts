@@ -6,4 +6,6 @@
 
 uint32_t flJunksWidth();
 uint32_t flJunksHeight();
-c
+const uint8_t* flJunksPixels();
+
+#endif /* __FL_JUNKS
