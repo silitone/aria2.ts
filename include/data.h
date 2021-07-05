@@ -20,4 +20,9 @@ typedef struct ngx_archive_t* NGXARC;
 /**
  * Create new archive.
  */
-NGXARC ngxArcInit(const char* filename
+NGXARC ngxArcInit(const char* filename, int readonly);
+
+/**
+ * Cleanup archive.
+ */
+void 
