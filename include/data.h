@@ -15,4 +15,7 @@
 
 typedef struct ngx_ablock_t* NGXBLK;
 
-typed
+typedef struct ngx_archive_t* NGXARC;
+
+/**
+ * Create new 
