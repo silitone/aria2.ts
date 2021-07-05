@@ -28,4 +28,6 @@ NGXARC ngxArcInit(const char* filename, int readonly);
 void ngxArcCleanup(NGXARC* oarc);
 
 /**
- * G
+ * Get archive block size.
+ */
+uint16_t ngxArcBlockSize(const
