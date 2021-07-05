@@ -18,4 +18,6 @@ typedef struct ngx_ablock_t* NGXBLK;
 typedef struct ngx_archive_t* NGXARC;
 
 /**
- * Create new 
+ * Create new archive.
+ */
+NGXARC ngxArcInit(const char* filename
