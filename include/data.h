@@ -25,4 +25,7 @@ NGXARC ngxArcInit(const char* filename, int readonly);
 /**
  * Cleanup archive.
  */
-void 
+void ngxArcCleanup(NGXARC* oarc);
+
+/**
+ * G
