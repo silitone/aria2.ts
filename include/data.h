@@ -30,4 +30,9 @@ void ngxArcCleanup(NGXARC* oarc);
 /**
  * Get archive block size.
  */
-uint16_t ngxArcBlockSize(const
+uint16_t ngxArcBlockSize(const NGXARC arc);
+
+/**
+ * Get archive block count.
+ */
+uint16_t
