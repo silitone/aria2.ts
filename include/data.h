@@ -53,4 +53,6 @@ int ngxArcUpdateBlock(NGXARC arc, const NGXBLK blk);
 uint16_t ngxBlockID(const NGXBLK blk);
 
 /**
- * Ge
+ * Get next block ID.
+ */
+uint16_t ngxBlockNextID(con
