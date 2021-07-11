@@ -63,4 +63,6 @@ uint16_t ngxBlockNextID(const NGXBLK blk);
 int ngxBlockSetNextID(NGXBLK blk, uint16_t nid);
 
 /**
- * Cleanup 
+ * Cleanup block data copy.
+ */
+void ngxBlockCleanup(NGXBLK* blk);
