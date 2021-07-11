@@ -45,4 +45,8 @@ NGXBLK ngxArcBlock(NGXARC arc, uint16_t blkid);
 /**
  * Update block in archive.
  */
-int ngxArcUpdateBlo
+int ngxArcUpdateBlock(NGXARC arc, const NGXBLK blk);
+
+/**
+ * Get block ID.
+ 
