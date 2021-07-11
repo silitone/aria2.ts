@@ -40,4 +40,9 @@ uint16_t ngxArcBlockCount(const NGXARC arc);
 /**
  * Get block from archive.
  */
-NGXBLK ngxArcBlock(NGXARC arc, uint16_t blki
+NGXBLK ngxArcBlock(NGXARC arc, uint16_t blkid);
+
+/**
+ * Update block in archive.
+ */
+int ngxArcUpdateBlo
