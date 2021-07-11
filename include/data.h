@@ -35,4 +35,7 @@ uint16_t ngxArcBlockSize(const NGXARC arc);
 /**
  * Get archive block count.
  */
-uint16_t
+uint16_t ngxArcBlockCount(const NGXARC arc);
+
+/**
+ * Get bloc
