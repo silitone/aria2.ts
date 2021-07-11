@@ -55,4 +55,9 @@ uint16_t ngxBlockID(const NGXBLK blk);
 /**
  * Get next block ID.
  */
-uint16_t ngxBlockNextID(con
+uint16_t ngxBlockNextID(const NGXBLK blk);
+
+/**
+ * Set next block ID.
+ */
+int ngxBloc
