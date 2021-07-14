@@ -66,3 +66,8 @@ int ngxBlockSetNextID(NGXBLK blk, uint16_t nid);
  * Cleanup block data copy.
  */
 void ngxBlockCleanup(NGXBLK* blk);
+
+/**
+ * Put data to archive.
+ */
+uint16_t ngxA
