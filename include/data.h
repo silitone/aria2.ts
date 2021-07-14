@@ -70,4 +70,9 @@ void ngxBlockCleanup(NGXBLK* blk);
 /**
  * Put data to archive.
  */
-uint16_t ngxArcDataPut(NGXARC arc, const void* data, uint32_t datalen, uint16_t 
+uint16_t ngxArcDataPut(NGXARC arc, const void* data, uint32_t datalen, uint16_t blkid);
+
+/**
+ * Get data from archive.
+ */
+void* ngxArcDataGet(NGXAR
