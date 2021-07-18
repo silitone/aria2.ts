@@ -75,4 +75,7 @@ uint16_t ngxArcDataPut(NGXARC arc, const void* data, uint32_t datalen, uint16_t 
 /**
  * Get data from archive.
  */
-void* ngxArcDataGet(NGXAR
+void* ngxArcDataGet(NGXARC arc, uint16_t blkid, uint32_t* datalen);
+
+/**
+ * Get 
