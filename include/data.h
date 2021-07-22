@@ -80,4 +80,6 @@ void* ngxArcDataGet(NGXARC arc, uint16_t blkid, uint32_t* datalen);
 /**
  * Get data from file.
  */
-void* ngxDataGet(FILE* file, uint32_t* datal
+void* ngxDataGet(FILE* file, uint32_t* datalen);
+
+#endif /* __DATA_HEADER__ */
