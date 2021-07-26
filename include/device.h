@@ -11,4 +11,6 @@
 
 enum ngxKeys {
     NGX_ESC = 65307,
-  
+    NGX_LEFT = 65361,
+    NGX_RIGHT = 65363,
+    NGX_UP = 
