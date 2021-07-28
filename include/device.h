@@ -16,3 +16,8 @@ enum ngxKeys {
     NGX_UP = 65362,
     NGX_DOWN = 65364,
     NGX_SHIFT = 65505,
+    NGX_CTRL = 65507
+};
+
+/**
+ * Rendering device guts.
