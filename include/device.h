@@ -21,3 +21,8 @@ enum ngxKeys {
 
 /**
  * Rendering device guts.
+ */
+struct ngx_device_t;
+
+/**
+ * Public interface for rendering devi
