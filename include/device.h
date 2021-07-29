@@ -32,4 +32,7 @@ typedef struct ngx_device_t* NGXDEVICE;
 /**
  * Rendering callback.
  */
-typedef void (*NGXDRA
+typedef void (*NGXDRAWFUNC)(double dt, void* ptr);
+
+/**
+ * Keyboard input callback
