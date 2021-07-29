@@ -35,4 +35,8 @@ typedef struct ngx_device_t* NGXDEVICE;
 typedef void (*NGXDRAWFUNC)(double dt, void* ptr);
 
 /**
- * Keyboard input callback
+ * Keyboard input callback.
+ */
+typedef void (*NGXKEYFUNC)(int key, void* ptr);
+
+type
