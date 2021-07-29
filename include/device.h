@@ -39,4 +39,4 @@ typedef void (*NGXDRAWFUNC)(double dt, void* ptr);
  */
 typedef void (*NGXKEYFUNC)(int key, void* ptr);
 
-type
+typedef void (*NGXLOADRESOURCEFUNC)(int load, void* ptr);
