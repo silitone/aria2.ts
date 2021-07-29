@@ -25,4 +25,8 @@ enum ngxKeys {
 struct ngx_device_t;
 
 /**
- * Public interface for rendering devi
+ * Public interface for rendering device.
+ */
+typedef struct ngx_device_t* NGXDEVICE;
+
+/**
