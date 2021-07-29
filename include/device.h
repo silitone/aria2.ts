@@ -44,4 +44,9 @@ typedef void (*NGXLOADRESOURCEFUNC)(int load, void* ptr);
 /**
  * Initialize rendering device.
  */
-NGX
+NGXDEVICE ngxInit();
+
+/**
+ * Cleanup rendering device.
+ */
+voi
