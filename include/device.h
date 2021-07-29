@@ -52,4 +52,9 @@ NGXDEVICE ngxInit();
 void ngxCleanup(NGXDEVICE* pdev);
 
 /**
- * Update rendering device state
+ * Update rendering device state.
+ */
+int ngxUpdate(NGXDEVICE dev);
+
+/**
+ * Shutd
