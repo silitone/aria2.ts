@@ -30,3 +30,6 @@ struct ngx_device_t;
 typedef struct ngx_device_t* NGXDEVICE;
 
 /**
+ * Rendering callback.
+ */
+typedef void (*NGXDRA
