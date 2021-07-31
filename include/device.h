@@ -57,4 +57,7 @@ void ngxCleanup(NGXDEVICE* pdev);
 int ngxUpdate(NGXDEVICE dev);
 
 /**
- * Shutd
+ * Shutdown engine.
+ * 
+ * @param dev devive
+ * @return ret
