@@ -60,4 +60,8 @@ int ngxUpdate(NGXDEVICE dev);
  * Shutdown engine.
  * 
  * @param dev devive
- * @return ret
+ * @return return non-zero on errors
+ */
+int ngxShutdown(NGXDEVICE dev);
+
+/*
