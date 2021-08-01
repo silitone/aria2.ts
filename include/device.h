@@ -64,4 +64,7 @@ int ngxUpdate(NGXDEVICE dev);
  */
 int ngxShutdown(NGXDEVICE dev);
 
-/*
+/**
+ * Set new draw func.
+ */
+int ngxDrawFunc(NGXDEVICE dev, NGX
