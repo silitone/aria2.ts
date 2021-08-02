@@ -67,4 +67,9 @@ int ngxShutdown(NGXDEVICE dev);
 /**
  * Set new draw func.
  */
-int ngxDrawFunc(NGXDEVICE dev, NGX
+int ngxDrawFunc(NGXDEVICE dev, NGXDRAWFUNC func);
+
+/**
+ * Set key func.
+ */
+int ng
