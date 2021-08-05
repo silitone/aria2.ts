@@ -79,4 +79,6 @@ int ngxKeyFunc(NGXDEVICE dev, NGXKEYFUNC func);
  * 
  * @param dev device
  * @param func function
- * @return non zero on 
+ * @return non zero on errors.
+ */
+int ngxLoadResourcesFunc(NGXDEVICE dev, NGXLOADRESOU
