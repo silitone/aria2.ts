@@ -73,3 +73,8 @@ int ngxDrawFunc(NGXDEVICE dev, NGXDRAWFUNC func);
  * Set key func.
  */
 int ngxKeyFunc(NGXDEVICE dev, NGXKEYFUNC func);
+
+/**
+ * Set load resources func.
+ * 
+ * @pa
