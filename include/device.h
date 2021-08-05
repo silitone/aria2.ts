@@ -77,4 +77,6 @@ int ngxKeyFunc(NGXDEVICE dev, NGXKEYFUNC func);
 /**
  * Set load resources func.
  * 
- * @pa
+ * @param dev device
+ * @param func function
+ * @return non zero on 
