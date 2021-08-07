@@ -81,4 +81,9 @@ int ngxKeyFunc(NGXDEVICE dev, NGXKEYFUNC func);
  * @param func function
  * @return non zero on errors.
  */
-int ngxLoadResourcesFunc(NGXDEVICE dev, NGXLOADRESOU
+int ngxLoadResourcesFunc(NGXDEVICE dev, NGXLOADRESOURCEFUNC func);
+
+/**
+ * Set user pointer.
+ */
+int ngxPointer(NG
