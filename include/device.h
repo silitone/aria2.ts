@@ -89,4 +89,9 @@ int ngxLoadResourcesFunc(NGXDEVICE dev, NGXLOADRESOURCEFUNC func);
 int ngxPointer(NGXDEVICE dev, void* ptr);
 
 /**
- * Time from device sta
+ * Time from device start.
+ */
+double ngxNow(const NGXDEVICE dev);
+
+/**
+ * Write for
