@@ -86,4 +86,7 @@ int ngxLoadResourcesFunc(NGXDEVICE dev, NGXLOADRESOURCEFUNC func);
 /**
  * Set user pointer.
  */
-int ngxPointer(NG
+int ngxPointer(NGXDEVICE dev, void* ptr);
+
+/**
+ * Time from device sta
