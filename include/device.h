@@ -96,4 +96,9 @@ double ngxNow(const NGXDEVICE dev);
 /**
  * Write formatted message to log.
  */
-int ngxLog(const NGXDEVICE dev, con
+int ngxLog(const NGXDEVICE dev, const char* format, ...);
+
+/**
+ * Is key down.
+ */
+int
