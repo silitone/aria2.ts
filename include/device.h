@@ -94,4 +94,6 @@ int ngxPointer(NGXDEVICE dev, void* ptr);
 double ngxNow(const NGXDEVICE dev);
 
 /**
- * Write for
+ * Write formatted message to log.
+ */
+int ngxLog(const NGXDEVICE dev, con
