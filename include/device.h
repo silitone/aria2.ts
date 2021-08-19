@@ -101,4 +101,7 @@ int ngxLog(const NGXDEVICE dev, const char* format, ...);
 /**
  * Is key down.
  */
-int
+int ngxIsKeyDown(const NGXDEVICE dev, int key);
+
+/**
+ * Set pe
