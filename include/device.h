@@ -104,4 +104,7 @@ int ngxLog(const NGXDEVICE dev, const char* format, ...);
 int ngxIsKeyDown(const NGXDEVICE dev, int key);
 
 /**
- * Set pe
+ * Set perspective mode.
+ * 
+ * @param dev device
+ * @
