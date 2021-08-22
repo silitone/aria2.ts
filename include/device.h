@@ -107,4 +107,7 @@ int ngxIsKeyDown(const NGXDEVICE dev, int key);
  * Set perspective mode.
  * 
  * @param dev device
- * @
+ * @param enable 0 - flat, 1 - 3D, 2 - 2D
+ * @return non-zero on error
+ */
+int 
