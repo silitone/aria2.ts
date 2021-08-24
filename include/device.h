@@ -113,3 +113,7 @@ int ngxIsKeyDown(const NGXDEVICE dev, int key);
 int ngxSetPerspective(NGXDEVICE dev, int enable);
 
 /**
+ * Set initial resolution.
+ * 
+ * @param dev device
+ 
