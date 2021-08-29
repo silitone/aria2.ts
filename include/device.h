@@ -117,4 +117,7 @@ int ngxSetPerspective(NGXDEVICE dev, int enable);
  * 
  * @param dev device
  * @param width initial width
- * @param heigh
+ * @param height initial height
+ * @return non-zero on error
+ */
+int
