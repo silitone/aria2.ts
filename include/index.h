@@ -2,4 +2,7 @@
 #include <stddef.h>
 #include <data.h>
 
-#ifndef 
+#ifndef __INDEX_HEADER__
+#define __INDEX_HEADER__
+
+typedef struct
