@@ -7,4 +7,8 @@
 
 typedef struct ngx_index_t* NGXINDEX;
 
-typedef struct ngx_entr
+typedef struct ngx_entry_t* NGXENTRY;
+
+NGXINDEX ngxIndexInit();
+
+voi
