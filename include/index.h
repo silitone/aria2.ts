@@ -11,4 +11,6 @@ typedef struct ngx_entry_t* NGXENTRY;
 
 NGXINDEX ngxIndexInit();
 
-voi
+void ngxIndexCleanup(NGXINDEX* pindex);
+
+NGXENTRY ngxIndexInse
