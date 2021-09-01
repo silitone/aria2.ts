@@ -13,4 +13,4 @@ NGXINDEX ngxIndexInit();
 
 void ngxIndexCleanup(NGXINDEX* pindex);
 
-NGXENTRY ngxIndexInse
+NGXENTRY ngxIndexInsert(NGXINDEX index, const char* key, uint16_t value);
