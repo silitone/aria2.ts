@@ -17,3 +17,6 @@ NGXENTRY ngxIndexInsert(NGXINDEX index, const char* key, uint16_t value);
 
 uint16_t ngxIndexSize(const NGXINDEX index);
 
+uint16_t ngxIndexCap(const NGXINDEX index);
+
+in
