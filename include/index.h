@@ -19,4 +19,6 @@ uint16_t ngxIndexSize(const NGXINDEX index);
 
 uint16_t ngxIndexCap(const NGXINDEX index);
 
-in
+int ngxIndexRemove(NGXINDEX index, NGXENTRY entry);
+
+int ngxIn
