@@ -21,4 +21,6 @@ uint16_t ngxIndexCap(const NGXINDEX index);
 
 int ngxIndexRemove(NGXINDEX index, NGXENTRY entry);
 
-int ngxIn
+int ngxIndexErase(NGXINDEX index, const char* key);
+
+N
