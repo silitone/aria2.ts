@@ -23,4 +23,6 @@ int ngxIndexRemove(NGXINDEX index, NGXENTRY entry);
 
 int ngxIndexErase(NGXINDEX index, const char* key);
 
-NGXENTRY ngxIndexFind(const NGXINDEX index, const char* ke
+NGXENTRY ngxIndexFind(const NGXINDEX index, const char* key);
+
+const char* ngxEntryKey(const NGXENTRY entry);
