@@ -31,4 +31,6 @@ uint16_t ngxEntryValue(const NGXENTRY entry);
 
 uint16_t ngxIndexSave(NGXARC arc, const NGXINDEX index, uint16_t loc);
 
-NGXINDEX ngxIndexLoad(NGXARC arc, uint16_t h
+NGXINDEX ngxIndexLoad(NGXARC arc, uint16_t head);
+
+#endif /* __INDEX_HEADER__  */
