@@ -29,4 +29,4 @@ const char* ngxEntryKey(const NGXENTRY entry);
 
 uint16_t ngxEntryValue(const NGXENTRY entry);
 
-uint1
+uint16_t ngxIndexSave(NGXARC arc, const NGXINDEX index, ui
