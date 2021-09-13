@@ -8,4 +8,7 @@ block {
 }
 
 block1.key3 value4
-blo
+block1.key4 value5
+
+number -123.0
+str "two 
