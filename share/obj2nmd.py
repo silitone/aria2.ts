@@ -1,2 +1,6 @@
 #!/usr/bin/env python
-# -*- coding: utf
+# -*- coding: utf-8 -*-
+
+import argparse as arg
+import struct as st
+import o
