@@ -3,4 +3,7 @@
 
 import argparse as arg
 import struct as st
-import o
+import os.path as ph
+
+def parse():
+    parser = arg.ArgumentParser( descri
