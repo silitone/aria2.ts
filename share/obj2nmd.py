@@ -7,4 +7,6 @@ import os.path as ph
 
 def parse():
     parser = arg.ArgumentParser( description='Convert OBJ model to NMD.')
-    parser.add_argument('f
+    parser.add_argument('filename', type=str, help='Input OBJ model filename')
+
+    args 
