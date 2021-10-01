@@ -9,4 +9,7 @@ def parse():
     parser = arg.ArgumentParser( description='Convert OBJ model to NMD.')
     parser.add_argument('filename', type=str, help='Input OBJ model filename')
 
-    args 
+    args = parser.parse_args()
+    return args
+
+def ent
