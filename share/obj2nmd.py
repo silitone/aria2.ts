@@ -17,4 +17,9 @@ def entry():
 
     v = []
     vn = []
-    v
+    vt = []
+    f = []
+
+    buffer = []
+
+    with open(args.file
