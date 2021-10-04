@@ -12,4 +12,9 @@ def parse():
     args = parser.parse_args()
     return args
 
-def ent
+def entry():
+    args = parse()
+
+    v = []
+    vn = []
+    v
