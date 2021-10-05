@@ -22,4 +22,6 @@ def entry():
 
     buffer = []
 
-    with open(args.file
+    with open(args.filename, 'r') as input:
+        for line in input:
+      
