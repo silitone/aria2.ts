@@ -25,4 +25,7 @@ def entry():
     with open(args.filename, 'r') as input:
         for line in input:
             data = line.strip()
-            if data[0]
+            if data[0] == '#':
+                continue
+
+            parts = data.split
