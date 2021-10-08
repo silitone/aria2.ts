@@ -28,4 +28,7 @@ def entry():
             if data[0] == '#':
                 continue
 
-            parts = data.split
+            parts = data.split()
+
+            if parts[0] == 'v':
+                v.a
