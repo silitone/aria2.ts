@@ -31,4 +31,5 @@ def entry():
             parts = data.split()
 
             if parts[0] == 'v':
-                v.a
+                v.append([float(x) for x in parts[1:]])
+            elif parts[0] == '
