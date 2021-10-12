@@ -35,4 +35,5 @@ def entry():
             elif parts[0] == 'vn':
                 vn.append([float(x) for x in parts[1:]])
             elif parts[0] == 'vt':
-                vt.
+                vt.append([float(x) for x in parts[1:]])
+            elif parts[0] == 'f':
