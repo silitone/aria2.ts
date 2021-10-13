@@ -40,4 +40,5 @@ def entry():
 
                 if (len(vt) == 0):
                     vt.append( [0.0, 0.0] )
-                if (len(vn
+                if (len(vn) == 0):
+                    vn.append( [0
