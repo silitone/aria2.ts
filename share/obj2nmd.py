@@ -41,4 +41,6 @@ def entry():
                 if (len(vt) == 0):
                     vt.append( [0.0, 0.0] )
                 if (len(vn) == 0):
-                    vn.append( [0
+                    vn.append( [0.0, 0.0, 0.0] )
+
+                for face in pa
