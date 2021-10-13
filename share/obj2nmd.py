@@ -39,4 +39,5 @@ def entry():
             elif parts[0] == 'f':
 
                 if (len(vt) == 0):
-           
+                    vt.append( [0.0, 0.0] )
+                if (len(vn
