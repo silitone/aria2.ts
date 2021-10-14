@@ -43,4 +43,5 @@ def entry():
                 if (len(vn) == 0):
                     vn.append( [0.0, 0.0, 0.0] )
 
-                for face in pa
+                for face in parts[1:]:
+                    vnd = [ (int(x)-1
