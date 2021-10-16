@@ -44,4 +44,6 @@ def entry():
                     vn.append( [0.0, 0.0, 0.0] )
 
                 for face in parts[1:]:
-                    vnd = [ (int(x)-1
+                    vnd = [ (int(x)-1) if len(x) > 0 else 0 for x in face.split('/')]
+
+        
