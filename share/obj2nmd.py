@@ -46,4 +46,4 @@ def entry():
                 for face in parts[1:]:
                     vnd = [ (int(x)-1) if len(x) > 0 else 0 for x in face.split('/')]
 
-        
+                    buffer.append( v[vnd[0]] + vt[vnd[1]] + vn[vnd[2]] )
