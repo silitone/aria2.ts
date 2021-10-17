@@ -51,4 +51,6 @@ def entry():
             else:
                 print line
 
-    output 
+    output = ph.splitext(args.filename)[0] + '.nmd'
+
+    with ope
