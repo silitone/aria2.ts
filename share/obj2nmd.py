@@ -54,4 +54,7 @@ def entry():
     output = ph.splitext(args.filename)[0] + '.nmd'
 
     with open(output, 'w') as ofile:
-        header = st.pack('=HH'
+        header = st.pack('=HH', 2, len(buffer))
+        ofile.write(header)
+
+   
