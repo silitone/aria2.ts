@@ -3,4 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdint.h>
-#include
+#include <string.h>
+
+#ifdef __DATA_DEBUG__
+#define DLOG(fmt,
