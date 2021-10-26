@@ -57,4 +57,5 @@ def entry():
         header = st.pack('=HH', 2, len(buffer))
         ofile.write(header)
 
-   
+        for vrt in buffer:
+            bvrt = st.pack('=ff
