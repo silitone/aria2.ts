@@ -62,4 +62,6 @@ def entry():
             ofile.write(bvrt)
 
 
-if __
+if __name__ == '__main__':
+    entry()
+
