@@ -58,4 +58,8 @@ def entry():
         ofile.write(header)
 
         for vrt in buffer:
-            bvrt = st.pack('=ff
+            bvrt = st.pack('=ffffffff', *vrt)
+            ofile.write(bvrt)
+
+
+if __
