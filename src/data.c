@@ -6,4 +6,4 @@
 #include <string.h>
 
 #ifdef __DATA_DEBUG__
-#define DLOG(fmt,
+#define DLOG(fmt, ...) fprintf(stderr, fmt "\n",  ##__VA_ARGS__)
