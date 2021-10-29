@@ -7,3 +7,8 @@
 
 #ifdef __DATA_DEBUG__
 #define DLOG(fmt, ...) fprintf(stderr, fmt "\n",  ##__VA_ARGS__)
+#else
+#define DLOG(...)
+#endif
+
+struct ngx_ar
