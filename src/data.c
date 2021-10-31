@@ -11,4 +11,7 @@
 #define DLOG(...)
 #endif
 
-struct ngx_ar
+struct ngx_archive_t {
+  FILE* fl;
+  uint16_t blkoff;
+  uint16_t blk
