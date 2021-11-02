@@ -14,4 +14,9 @@
 struct ngx_archive_t {
   FILE* fl;
   uint16_t blkoff;
-  uint16_t blk
+  uint16_t blksz;
+  uint16_t blkcnt;
+  int ronly;
+};
+
+struct ngx_ablock_t
