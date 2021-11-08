@@ -22,4 +22,8 @@ struct ngx_archive_t {
 struct ngx_ablock_t {
   uint16_t blkid;
   uint16_t blknxt;
-  uint8_t* blk
+  uint8_t* blkdata;
+};
+
+#define NGXMAGIC (0x5677ABCD)
+#define NGXVERSION
