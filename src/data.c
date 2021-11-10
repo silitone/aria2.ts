@@ -26,4 +26,7 @@ struct ngx_ablock_t {
 };
 
 #define NGXMAGIC (0x5677ABCD)
-#define NGXVERSION
+#define NGXVERSION (0x1)
+#define NGXBLKSIZE (512)
+
+#pragma pack
