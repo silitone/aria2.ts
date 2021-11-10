@@ -29,4 +29,7 @@ struct ngx_ablock_t {
 #define NGXVERSION (0x1)
 #define NGXBLKSIZE (512)
 
-#pragma pack
+#pragma pack(push, 1)
+
+struct ngx_block_t {
+  uint16_t blkn
