@@ -32,4 +32,6 @@ struct ngx_ablock_t {
 #pragma pack(push, 1)
 
 struct ngx_block_t {
-  uint16_t blkn
+  uint16_t blknxt; /**< Next block */
+  uint8_t blkdata[]; /**< Block data */
+}
