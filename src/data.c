@@ -34,4 +34,7 @@ struct ngx_ablock_t {
 struct ngx_block_t {
   uint16_t blknxt; /**< Next block */
   uint8_t blkdata[]; /**< Block data */
-}
+};
+
+struct ngx_file_t {
+  uint32_t magic; /**< archive fil
