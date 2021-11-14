@@ -40,4 +40,5 @@ struct ngx_file_t {
   uint32_t magic; /**< archive file magic */
   uint32_t version; /**< archive version */
   uint32_t blkoff; /**< block offset from start */
-  uin
+  uint16_t blksz; /**< block size */
+  uint16_t blkcnt; /**<
