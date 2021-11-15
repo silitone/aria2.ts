@@ -41,4 +41,9 @@ struct ngx_file_t {
   uint32_t version; /**< archive version */
   uint32_t blkoff; /**< block offset from start */
   uint16_t blksz; /**< block size */
-  uint16_t blkcnt; /**<
+  uint16_t blkcnt; /**< total block count */
+};
+
+#pragma pack(pop)
+
+/*
