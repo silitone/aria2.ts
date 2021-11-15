@@ -47,3 +47,6 @@ struct ngx_file_t {
 #pragma pack(pop)
 
 /*
+ * NGX resource archive structure.
+ *
+ * [0000-0015] ngx
