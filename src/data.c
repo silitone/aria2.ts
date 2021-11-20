@@ -50,4 +50,8 @@ struct ngx_file_t {
  * NGX resource archive structure.
  *
  * [0000-0015] ngx_file_t -- archive header information
- * [0016-????] ngx_
+ * [0016-????] ngx_block_t -- block headers
+ *
+ */
+
+static FILE* ngxOpen(const
