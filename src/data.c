@@ -54,4 +54,5 @@ struct ngx_file_t {
  *
  */
 
-static FILE* ngxOpen(const
+static FILE* ngxOpen(const char* filename, int readonly){
+  if (readonly == 0){
