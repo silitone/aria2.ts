@@ -59,4 +59,8 @@ static FILE* ngxOpen(const char* filename, int readonly){
     FILE* fl = fopen(filename, "r+");
     if (fl == 0){
       fl = fopen(filename, "w");
-      if (fl == 0){ // Can't crea
+      if (fl == 0){ // Can't create new file
+        return 0;
+      }
+      fclose(fl);
+     
