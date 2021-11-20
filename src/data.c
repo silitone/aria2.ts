@@ -56,3 +56,5 @@ struct ngx_file_t {
 
 static FILE* ngxOpen(const char* filename, int readonly){
   if (readonly == 0){
+    FILE* fl = fopen(filename, "r+");
+    if (fl == 0)
