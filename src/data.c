@@ -68,4 +68,9 @@ static FILE* ngxOpen(const char* filename, int readonly){
     if (fl == 0){ // Still can't open file
       return 0;
     }
-    return 
+    return fl;
+  }
+
+  // readonly
+  FILE* fl = fopen(filename, "r");
+  if 
