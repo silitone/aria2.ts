@@ -79,4 +79,6 @@ static FILE* ngxOpen(const char* filename, int readonly){
   return fl;
 }
 
-static int ngxGetHeade
+static int ngxGetHeader(FILE* fl, struct ngx_file_t* pheader, int readonly){
+
+ 
