@@ -73,4 +73,10 @@ static FILE* ngxOpen(const char* filename, int readonly){
 
   // readonly
   FILE* fl = fopen(filename, "r");
-  if 
+  if (fl == 0){
+    return 0;
+  }
+  return fl;
+}
+
+static int ngxGetHeade
