@@ -81,4 +81,7 @@ static FILE* ngxOpen(const char* filename, int readonly){
 
 static int ngxGetHeader(FILE* fl, struct ngx_file_t* pheader, int readonly){
 
+  // Seek header
+  if (fseek(fl, 0, SEEK_SET) != 0){
+    return -1;
  
