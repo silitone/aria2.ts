@@ -86,4 +86,7 @@ static int ngxGetHeader(FILE* fl, struct ngx_file_t* pheader, int readonly){
     return -1;
   }
   // Try to read header
-  if (fread(pheader, sizeof(str
+  if (fread(pheader, sizeof(struct ngx_file_t), 1, fl) != 1 ){
+
+    if (readonly != 0){
+     
