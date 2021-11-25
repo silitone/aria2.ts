@@ -84,4 +84,6 @@ static int ngxGetHeader(FILE* fl, struct ngx_file_t* pheader, int readonly){
   // Seek header
   if (fseek(fl, 0, SEEK_SET) != 0){
     return -1;
- 
+  }
+  // Try to read header
+  if (fread(pheader, sizeof(str
