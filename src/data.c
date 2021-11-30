@@ -94,4 +94,5 @@ static int ngxGetHeader(FILE* fl, struct ngx_file_t* pheader, int readonly){
 
     clearerr(fl);
     // If not present
- 
+    if (fseek(fl, 0, SEEK_SET) != 0){
+      return -1;
