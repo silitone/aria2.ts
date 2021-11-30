@@ -89,4 +89,9 @@ static int ngxGetHeader(FILE* fl, struct ngx_file_t* pheader, int readonly){
   if (fread(pheader, sizeof(struct ngx_file_t), 1, fl) != 1 ){
 
     if (readonly != 0){
-     
+      return -1;
+    }
+
+    clearerr(fl);
+    // If not present
+ 
