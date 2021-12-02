@@ -99,4 +99,6 @@ static int ngxGetHeader(FILE* fl, struct ngx_file_t* pheader, int readonly){
     }
 
     // Generate new one
-    pheader->magic = NGX
+    pheader->magic = NGXMAGIC;
+    pheader->version = NGXVERSION;
+    pheader->blkoff = s
