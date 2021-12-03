@@ -101,4 +101,5 @@ static int ngxGetHeader(FILE* fl, struct ngx_file_t* pheader, int readonly){
     // Generate new one
     pheader->magic = NGXMAGIC;
     pheader->version = NGXVERSION;
-    pheader->blkoff = s
+    pheader->blkoff = sizeof(struct ngx_file_t);
+    pheader->blksz = NGXBLKSI
