@@ -106,4 +106,5 @@ static int ngxGetHeader(FILE* fl, struct ngx_file_t* pheader, int readonly){
     pheader->blkcnt = 0;
 
     // Update file
-    i
+    if (fwrite(pheader, sizeof(struct ngx_file_t), 1, fl)  != 1){
+   
