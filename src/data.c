@@ -114,3 +114,6 @@ static int ngxGetHeader(FILE* fl, struct ngx_file_t* pheader, int readonly){
   }
   return 0;
 }
+
+uint16_t ngxArcBlockSize(const NGXARC arc){
+  if (arc != 0
