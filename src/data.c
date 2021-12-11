@@ -124,3 +124,9 @@ uint16_t ngxArcBlockSize(const NGXARC arc){
 
 uint16_t ngxArcBlockCount(const NGXARC arc){
   if (arc != 0) {
+    return arc->blkcnt;
+  }
+  return 0;
+}
+
+int ng
