@@ -131,4 +131,5 @@ uint16_t ngxArcBlockCount(const NGXARC arc){
 
 int ngxUpdateHeader(NGXARC arc, int readonly){
   if (readonly == 0){
-  
+    struct ngx_file_t fheader;
+    fheader.magic = NGXMAGIC;
