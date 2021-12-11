@@ -129,4 +129,6 @@ uint16_t ngxArcBlockCount(const NGXARC arc){
   return 0;
 }
 
-int ng
+int ngxUpdateHeader(NGXARC arc, int readonly){
+  if (readonly == 0){
+  
