@@ -138,4 +138,5 @@ int ngxUpdateHeader(NGXARC arc, int readonly){
     fheader.blksz = arc->blksz;
     fheader.blkcnt = arc->blkcnt;
 
-    //
+    // Seek header
+    if (fseek(arc->fl, 0, SEEK_SET) != 0){
