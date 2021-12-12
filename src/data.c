@@ -145,4 +145,9 @@ int ngxUpdateHeader(NGXARC arc, int readonly){
 
     // Update file
     if (fwrite(&fheader, sizeof(struct ngx_file_t), 1, arc->fl)  != 1){
-      retu
+      return -1;
+    }
+
+    fflush(arc->fl);
+    return 0;
+  }
