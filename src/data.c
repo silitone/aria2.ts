@@ -134,4 +134,5 @@ int ngxUpdateHeader(NGXARC arc, int readonly){
     struct ngx_file_t fheader;
     fheader.magic = NGXMAGIC;
     fheader.version = NGXVERSION;
-    fhe
+    fheader.blkoff = arc->blkoff;
+    fheader.blksz = arc
