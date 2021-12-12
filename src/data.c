@@ -133,3 +133,5 @@ int ngxUpdateHeader(NGXARC arc, int readonly){
   if (readonly == 0){
     struct ngx_file_t fheader;
     fheader.magic = NGXMAGIC;
+    fheader.version = NGXVERSION;
+    fhe
