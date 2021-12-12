@@ -135,4 +135,7 @@ int ngxUpdateHeader(NGXARC arc, int readonly){
     fheader.magic = NGXMAGIC;
     fheader.version = NGXVERSION;
     fheader.blkoff = arc->blkoff;
-    fheader.blksz = arc
+    fheader.blksz = arc->blksz;
+    fheader.blkcnt = arc->blkcnt;
+
+    //
