@@ -140,3 +140,8 @@ int ngxUpdateHeader(NGXARC arc, int readonly){
 
     // Seek header
     if (fseek(arc->fl, 0, SEEK_SET) != 0){
+      return -1;
+    }
+
+    // Update file
+    if (fwrite(&fh
