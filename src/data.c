@@ -151,3 +151,9 @@ int ngxUpdateHeader(NGXARC arc, int readonly){
     fflush(arc->fl);
     return 0;
   }
+  return -1;
+}
+
+#define MAX(A, B) ((A>B)?(A):(B))
+
+N
