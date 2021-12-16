@@ -156,4 +156,4 @@ int ngxUpdateHeader(NGXARC arc, int readonly){
 
 #define MAX(A, B) ((A>B)?(A):(B))
 
-N
+NGXARC ngxArcInit(const char* filename, in
