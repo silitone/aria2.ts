@@ -174,4 +174,8 @@ NGXARC ngxArcInit(const char* filename, int readonly){
     goto FREE_RESULT;
   }
 
-  if
+  if (fheader.magic != NGXMAGIC){
+    goto FREE_RESULT;
+  }
+
+  i
