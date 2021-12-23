@@ -170,4 +170,8 @@ NGXARC ngxArcInit(const char* filename, int readonly){
     goto FREE_RESULT;
   }
 
-  if (ngxGetHeader(fl, &fheader, reado
+  if (ngxGetHeader(fl, &fheader, readonly) != 0){
+    goto FREE_RESULT;
+  }
+
+  if
