@@ -167,4 +167,7 @@ NGXARC ngxArcInit(const char* filename, int readonly){
 
   fl = ngxOpen(filename, readonly);
   if (fl == 0){ // Can't open file
-    goto FREE_
+    goto FREE_RESULT;
+  }
+
+  if (ngxGetHeader(fl, &fheader, reado
