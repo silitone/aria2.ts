@@ -165,4 +165,6 @@ NGXARC ngxArcInit(const char* filename, int readonly){
     return 0;
   }
 
-  fl = ngxOpen(filename, r
+  fl = ngxOpen(filename, readonly);
+  if (fl == 0){ // Can't open file
+    goto FREE_
