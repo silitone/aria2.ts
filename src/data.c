@@ -160,3 +160,9 @@ NGXARC ngxArcInit(const char* filename, int readonly){
   NGXARC result = (NGXARC)malloc(sizeof(struct ngx_archive_t));
   FILE* fl = 0;
   struct ngx_file_t fheader;
+
+  if (result == 0){
+    return 0;
+  }
+
+  fl = ngxOpen(filename, r
