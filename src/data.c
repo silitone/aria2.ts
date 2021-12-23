@@ -178,4 +178,5 @@ NGXARC ngxArcInit(const char* filename, int readonly){
     goto FREE_RESULT;
   }
 
-  i
+  if (fheader.version != NGXVERSION){
+    got
