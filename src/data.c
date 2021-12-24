@@ -182,4 +182,8 @@ NGXARC ngxArcInit(const char* filename, int readonly){
     goto FREE_RESULT;
   }
 
-  if (fheader.blksz != NGXB
+  if (fheader.blksz != NGXBLKSIZE ) {
+    goto FREE_RESULT;
+  }
+
+  result->fl
