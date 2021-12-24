@@ -186,4 +186,6 @@ NGXARC ngxArcInit(const char* filename, int readonly){
     goto FREE_RESULT;
   }
 
-  result->fl
+  result->fl = fl;
+  result->blkoff = fheader.blkoff;
+  resu
