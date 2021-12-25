@@ -201,4 +201,6 @@ FREE_RESULT:
   return 0;
 }
 
-void ngxArcCleanup(NGXARC
+void ngxArcCleanup(NGXARC* oarc){
+  if ((oarc != 0)&&(*oarc != 0)){
+   
