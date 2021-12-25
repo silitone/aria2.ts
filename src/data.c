@@ -193,4 +193,7 @@ NGXARC ngxArcInit(const char* filename, int readonly){
   result->ronly = readonly;
   return result;
 
-F
+FREE_RESULT:
+  free(result);
+  if (fl != 0){
+   
