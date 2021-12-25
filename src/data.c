@@ -196,4 +196,9 @@ NGXARC ngxArcInit(const char* filename, int readonly){
 FREE_RESULT:
   free(result);
   if (fl != 0){
-   
+    fclose(fl);
+  }
+  return 0;
+}
+
+void ngxArcCleanup(NGXARC
