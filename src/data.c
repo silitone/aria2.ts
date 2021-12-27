@@ -203,4 +203,6 @@ FREE_RESULT:
 
 void ngxArcCleanup(NGXARC* oarc){
   if ((oarc != 0)&&(*oarc != 0)){
-   
+    fclose((*oarc)->fl);
+    free(*oarc);
+    *oarc
