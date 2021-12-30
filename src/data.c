@@ -205,4 +205,8 @@ void ngxArcCleanup(NGXARC* oarc){
   if ((oarc != 0)&&(*oarc != 0)){
     fclose((*oarc)->fl);
     free(*oarc);
-    *oarc
+    *oarc = 0;
+  }
+}
+
+int ngxGetBlock(NGXARC arc, uint16_t bl
