@@ -214,4 +214,9 @@ int ngxGetBlock(NGXARC arc, uint16_t blkid, NGXBLK blk, int readonly){
   struct ngx_block_t* fblk = 0;
 
   fblk = (struct ngx_block_t*) malloc(arc->blksz);
-  if (f
+  if (fblk == 0){
+    return -1;
+  }
+
+  // Seek block
+  if (
