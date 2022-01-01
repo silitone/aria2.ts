@@ -210,4 +210,7 @@ void ngxArcCleanup(NGXARC* oarc){
 }
 
 int ngxGetBlock(NGXARC arc, uint16_t blkid, NGXBLK blk, int readonly){
-  int offset = arc->blkoff + arc->blksz*bl
+  int offset = arc->blkoff + arc->blksz*blkid;
+  struct ngx_block_t* fblk = 0;
+
+  fblk 
