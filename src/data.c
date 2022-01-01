@@ -220,4 +220,8 @@ int ngxGetBlock(NGXARC arc, uint16_t blkid, NGXBLK blk, int readonly){
 
   // Seek block
   if (fseek(arc->fl, offset, SEEK_SET) != 0){
-    fr
+    free(fblk);
+    return -1;
+  }
+
+  // Try to read blo
