@@ -224,4 +224,6 @@ int ngxGetBlock(NGXARC arc, uint16_t blkid, NGXBLK blk, int readonly){
     return -1;
   }
 
-  // Try to read blo
+  // Try to read block
+  if (fread(fblk, arc->blksz, 1, arc->fl) != 1 ){
+    
