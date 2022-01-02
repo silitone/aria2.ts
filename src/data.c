@@ -241,4 +241,7 @@ int ngxGetBlock(NGXARC arc, uint16_t blkid, NGXBLK blk, int readonly){
 
     // Generate new one
     fblk->blknxt = 0xFFFF;
-    memset(fblk->blkdata, 0, arc->blksz - sizeof(struct ngx_block
+    memset(fblk->blkdata, 0, arc->blksz - sizeof(struct ngx_block_t));
+
+    // Update file
+    if (fwrite(fblk, arc->blksz, 
