@@ -234,4 +234,9 @@ int ngxGetBlock(NGXARC arc, uint16_t blkid, NGXBLK blk, int readonly){
     clearerr(arc->fl);
 
     // If not present
-    if (fseek(arc->fl, offset, SEEK_SET) !=
+    if (fseek(arc->fl, offset, SEEK_SET) != 0){
+      free(fblk);
+      return -1;
+    }
+
+    // Generat
