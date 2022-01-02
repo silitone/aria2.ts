@@ -228,4 +228,9 @@ int ngxGetBlock(NGXARC arc, uint16_t blkid, NGXBLK blk, int readonly){
   if (fread(fblk, arc->blksz, 1, arc->fl) != 1 ){
     if (readonly != 0){
       free(fblk);
-      re
+      return -1;
+    }
+
+    clearerr(arc->fl);
+
+    // I
