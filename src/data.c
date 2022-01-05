@@ -246,4 +246,10 @@ int ngxGetBlock(NGXARC arc, uint16_t blkid, NGXBLK blk, int readonly){
     // Update file
     if (fwrite(fblk, arc->blksz, 1, arc->fl)  != 1){
       free(fblk);
-      ret
+      return -1;
+    }
+
+    fflush(arc->fl);
+  }
+
+  blk->blkdata = (uint8_t*)
