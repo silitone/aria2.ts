@@ -253,4 +253,9 @@ int ngxGetBlock(NGXARC arc, uint16_t blkid, NGXBLK blk, int readonly){
   }
 
   blk->blkdata = (uint8_t*) malloc(arc->blksz - sizeof(struct ngx_block_t));
-  if (b
+  if (blk->blkdata == 0){
+    free(fblk);
+    return -1;
+  }
+
+  blk->
