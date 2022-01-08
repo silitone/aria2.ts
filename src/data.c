@@ -260,4 +260,10 @@ int ngxGetBlock(NGXARC arc, uint16_t blkid, NGXBLK blk, int readonly){
 
   blk->blkid = blkid;
   blk->blknxt = fblk->blknxt;
-  memcpy(blk->blkdata, fblk->blkdata, arc->blksz - sizeof(struct ngx_block_t))
+  memcpy(blk->blkdata, fblk->blkdata, arc->blksz - sizeof(struct ngx_block_t));
+
+  free(fblk);
+  return 0;
+}
+
+NGXBLK ngxArcBlock(NG
