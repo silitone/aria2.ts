@@ -266,4 +266,6 @@ int ngxGetBlock(NGXARC arc, uint16_t blkid, NGXBLK blk, int readonly){
   return 0;
 }
 
-NGXBLK ngxArcBlock(NG
+NGXBLK ngxArcBlock(NGXARC arc, uint16_t blkid){
+  NGXBLK blk = 0;
+  int offs
