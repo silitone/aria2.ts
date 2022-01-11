@@ -268,4 +268,10 @@ int ngxGetBlock(NGXARC arc, uint16_t blkid, NGXBLK blk, int readonly){
 
 NGXBLK ngxArcBlock(NGXARC arc, uint16_t blkid){
   NGXBLK blk = 0;
-  int offs
+  int offset = 0;
+
+  if (blkid == 0xFFFF){
+    return 0;
+  }
+
+ 
