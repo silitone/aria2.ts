@@ -276,3 +276,8 @@ NGXBLK ngxArcBlock(NGXARC arc, uint16_t blkid){
 
   blk = (NGXBLK)malloc(sizeof(struct ngx_ablock_t));
   if (blk == 0){
+    return 0;
+  }
+  blk->blkdata = 0;
+
+  if (ngxGetBlo
