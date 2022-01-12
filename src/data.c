@@ -283,3 +283,7 @@ NGXBLK ngxArcBlock(NGXARC arc, uint16_t blkid){
   if (ngxGetBlock(arc, blkid, blk, arc->ronly) != 0){
     goto FREE_BLOCK;
   }
+
+  if (blk->blkid != blkid){
+    goto FREE_BLOCK;
+  
