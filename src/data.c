@@ -286,4 +286,7 @@ NGXBLK ngxArcBlock(NGXARC arc, uint16_t blkid){
 
   if (blk->blkid != blkid){
     goto FREE_BLOCK;
-  
+  }
+
+  if (blk->blkid >= arc->blkcnt){
+    arc->blkc
