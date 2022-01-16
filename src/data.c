@@ -290,4 +290,9 @@ NGXBLK ngxArcBlock(NGXARC arc, uint16_t blkid){
 
   if (blk->blkid >= arc->blkcnt){
     arc->blkcnt = blk->blkid + 1;
-    if (ngxUpdateHeade
+    if (ngxUpdateHeader(arc, arc->ronly) != 0){
+      goto FREE_BLOCK;
+    }
+  }
+
+  r
