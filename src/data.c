@@ -289,4 +289,5 @@ NGXBLK ngxArcBlock(NGXARC arc, uint16_t blkid){
   }
 
   if (blk->blkid >= arc->blkcnt){
-    arc->blkc
+    arc->blkcnt = blk->blkid + 1;
+    if (ngxUpdateHeade
