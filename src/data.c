@@ -295,4 +295,9 @@ NGXBLK ngxArcBlock(NGXARC arc, uint16_t blkid){
     }
   }
 
-  r
+  return blk;
+
+FREE_BLOCK:
+  free(blk->blkdata);
+  free(blk);
+  ret
