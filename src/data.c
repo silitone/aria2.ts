@@ -303,4 +303,9 @@ FREE_BLOCK:
   return 0;
 }
 
-uint16_t ngxBlockID(const NGXBLK
+uint16_t ngxBlockID(const NGXBLK blk){
+  if (blk == 0){
+    return 0;
+  }
+  return blk->blkid;
+}
