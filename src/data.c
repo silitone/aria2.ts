@@ -300,4 +300,7 @@ NGXBLK ngxArcBlock(NGXARC arc, uint16_t blkid){
 FREE_BLOCK:
   free(blk->blkdata);
   free(blk);
-  ret
+  return 0;
+}
+
+uint16_t ngxBlockID(const NGXBLK
