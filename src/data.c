@@ -309,3 +309,6 @@ uint16_t ngxBlockID(const NGXBLK blk){
   }
   return blk->blkid;
 }
+
+uint16_t ngxBlockNextID(const NGXBLK blk){
+  if (blk 
