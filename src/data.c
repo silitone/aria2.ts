@@ -319,4 +319,9 @@ uint16_t ngxBlockNextID(const NGXBLK blk){
 
 void ngxBlockCleanup(NGXBLK* oblk){
   if ((oblk != 0) && (*oblk != 0)){
-    fr
+    free((*oblk)->blkdata);
+    free(*oblk);
+    *oblk = 0;
+  }
+}
+
