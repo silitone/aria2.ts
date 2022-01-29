@@ -326,4 +326,8 @@ void ngxBlockCleanup(NGXBLK* oblk){
 }
 
 int ngxBlockSetNextID(NGXBLK blk, uint16_t nid){
-  if (blk == 0)
+  if (blk == 0){
+    return -1;
+  }
+  blk->blknxt = nid;
+  return 
