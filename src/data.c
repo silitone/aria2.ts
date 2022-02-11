@@ -330,4 +330,7 @@ int ngxBlockSetNextID(NGXBLK blk, uint16_t nid){
     return -1;
   }
   blk->blknxt = nid;
-  return 
+  return 0;
+}
+
+int ngxArcUpdateBlock(NGXARC arc, const NGXBLK
