@@ -335,4 +335,8 @@ int ngxBlockSetNextID(NGXBLK blk, uint16_t nid){
 
 int ngxArcUpdateBlock(NGXARC arc, const NGXBLK blk){
   int offset = 0;
-  if ((arc == 0) || 
+  if ((arc == 0) || (blk == 0)) {
+    return -1;
+  }
+
+  if (arc->ronl
