@@ -339,4 +339,8 @@ int ngxArcUpdateBlock(NGXARC arc, const NGXBLK blk){
     return -1;
   }
 
-  if (arc->ronl
+  if (arc->ronly != 0){
+    return -1;
+  }
+
+  offset = arc->bl
