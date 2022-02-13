@@ -343,4 +343,6 @@ int ngxArcUpdateBlock(NGXARC arc, const NGXBLK blk){
     return -1;
   }
 
-  offset = arc->bl
+  offset = arc->blkoff + arc->blksz*blk->blkid;
+
+  clearerr(arc-
