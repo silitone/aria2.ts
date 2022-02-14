@@ -345,4 +345,7 @@ int ngxArcUpdateBlock(NGXARC arc, const NGXBLK blk){
 
   offset = arc->blkoff + arc->blksz*blk->blkid;
 
-  clearerr(arc-
+  clearerr(arc->fl);
+  fflush(arc->fl);
+  // Seek block
+  if (fseek(arc->
