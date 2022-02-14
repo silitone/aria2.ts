@@ -348,4 +348,8 @@ int ngxArcUpdateBlock(NGXARC arc, const NGXBLK blk){
   clearerr(arc->fl);
   fflush(arc->fl);
   // Seek block
-  if (fseek(arc->
+  if (fseek(arc->fl, offset, SEEK_SET) != 0){
+    return -1;
+  }
+
+  // Write blo
