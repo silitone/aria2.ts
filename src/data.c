@@ -353,4 +353,6 @@ int ngxArcUpdateBlock(NGXARC arc, const NGXBLK blk){
   }
 
   // Write block header
-  if (fwrite(&(blk->blknxt), sizeof(uin
+  if (fwrite(&(blk->blknxt), sizeof(uint16_t), 1, arc->fl) != 1){
+    return -1;
+  
