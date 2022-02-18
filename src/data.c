@@ -367,4 +367,4 @@ int ngxArcUpdateBlock(NGXARC arc, const NGXBLK blk){
 
 }
 
-uint16_t ngxArcDataP
+uint16_t ngxArcDataPut(NGXARC arc, const void* data, uint32_t datalen
