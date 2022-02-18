@@ -358,4 +358,6 @@ int ngxArcUpdateBlock(NGXARC arc, const NGXBLK blk){
   }
 
   // Update data
-  if (fwrite(blk->blkdata, arc->
+  if (fwrite(blk->blkdata, arc->blksz - sizeof(uint16_t), 1, arc->fl)  != 1){
+    return -1;
+ 
