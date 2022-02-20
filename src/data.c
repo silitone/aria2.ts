@@ -367,4 +367,6 @@ int ngxArcUpdateBlock(NGXARC arc, const NGXBLK blk){
 
 }
 
-uint16_t ngxArcDataPut(NGXARC arc, const void* data, uint32_t datalen
+uint16_t ngxArcDataPut(NGXARC arc, const void* data, uint32_t datalen, uint16_t blkid){
+  NGXBLK pos = 0;
+  uint8_t* cursor =
