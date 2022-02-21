@@ -371,4 +371,7 @@ uint16_t ngxArcDataPut(NGXARC arc, const void* data, uint32_t datalen, uint16_t 
   NGXBLK pos = 0;
   uint8_t* cursor = (uint8_t*) data;
   uint16_t result = 0xFFFF;
-  ui
+  uint8_t* bcursor = 0;
+  uint32_t ln = 0;
+
+  if (arc->r
