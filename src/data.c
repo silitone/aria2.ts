@@ -378,4 +378,8 @@ uint16_t ngxArcDataPut(NGXARC arc, const void* data, uint32_t datalen, uint16_t 
     return 0xFFFF;
   }
 
-  if (blk
+  if (blkid == 0xFFFF){
+    blkid = arc->blkcnt;
+  }
+
+  pos = ngxArc
