@@ -384,4 +384,8 @@ uint16_t ngxArcDataPut(NGXARC arc, const void* data, uint32_t datalen, uint16_t 
 
   pos = ngxArcBlock(arc, blkid);
   if (pos == 0){
-    return 0xFFF
+    return 0xFFFF;
+  }
+  result = ngxBlockID(pos);
+
+  memcpy(pos->blkdata, &datalen, 
