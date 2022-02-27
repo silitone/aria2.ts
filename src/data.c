@@ -394,4 +394,6 @@ uint16_t ngxArcDataPut(NGXARC arc, const void* data, uint32_t datalen, uint16_t 
                   (arc->blksz-sizeof(struct ngx_block_t)-sizeof(uint32_t)):datalen;
   while (datalen > 0){
     memcpy(bcursor, cursor, ln);
- 
+    datalen -= ln;
+    cursor += ln;
+    if (datalen > 0)
