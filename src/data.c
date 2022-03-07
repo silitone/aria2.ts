@@ -396,4 +396,6 @@ uint16_t ngxArcDataPut(NGXARC arc, const void* data, uint32_t datalen, uint16_t 
     memcpy(bcursor, cursor, ln);
     datalen -= ln;
     cursor += ln;
-    if (datalen > 0)
+    if (datalen > 0){
+      NGXBLK next = 0;
+      if (ngxBlockNextID(po
