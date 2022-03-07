@@ -398,4 +398,5 @@ uint16_t ngxArcDataPut(NGXARC arc, const void* data, uint32_t datalen, uint16_t 
     cursor += ln;
     if (datalen > 0){
       NGXBLK next = 0;
-      if (ngxBlockNextID(po
+      if (ngxBlockNextID(pos) == 0xFFFF){
+        next = ngxArcBlock(arc, arc->bl
