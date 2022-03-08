@@ -401,4 +401,6 @@ uint16_t ngxArcDataPut(NGXARC arc, const void* data, uint32_t datalen, uint16_t 
       if (ngxBlockNextID(pos) == 0xFFFF){
         next = ngxArcBlock(arc, arc->blkcnt);
       } else {
-        next = ngxArcBlock(a
+        next = ngxArcBlock(arc, ngxBlockNextID(pos));
+      }
+      if (next == 0){
