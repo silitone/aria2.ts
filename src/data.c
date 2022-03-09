@@ -409,4 +409,6 @@ uint16_t ngxArcDataPut(NGXARC arc, const void* data, uint32_t datalen, uint16_t 
       }
       ngxBlockSetNextID(pos, ngxBlockID(next));
       if (ngxArcUpdateBlock(arc, pos) != 0){
+        ngxBlockCleanup(&pos);
+        ngxBlockCleanup(&next);
     
