@@ -413,4 +413,7 @@ uint16_t ngxArcDataPut(NGXARC arc, const void* data, uint32_t datalen, uint16_t 
         ngxBlockCleanup(&next);
         return 0xFFFF;
       }
-      ngxBlockCleanup(&pos)
+      ngxBlockCleanup(&pos);
+      pos = next;
+      bcursor = pos->blkdata;
+    }
