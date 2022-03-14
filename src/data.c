@@ -418,4 +418,6 @@ uint16_t ngxArcDataPut(NGXARC arc, const void* data, uint32_t datalen, uint16_t 
       bcursor = pos->blkdata;
     }
     ln = (datalen > (arc->blksz-sizeof(struct ngx_block_t)))?
-                    (arc->blksz-sizeof(
+                    (arc->blksz-sizeof(struct ngx_block_t)):datalen;
+  }
+  if (ngxArcUpdateBlock(ar
