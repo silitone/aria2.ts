@@ -420,4 +420,7 @@ uint16_t ngxArcDataPut(NGXARC arc, const void* data, uint32_t datalen, uint16_t 
     ln = (datalen > (arc->blksz-sizeof(struct ngx_block_t)))?
                     (arc->blksz-sizeof(struct ngx_block_t)):datalen;
   }
-  if (ngxArcUpdateBlock(ar
+  if (ngxArcUpdateBlock(arc, pos) != 0){
+    ngxBlockCleanup(&pos);
+    return 0xFFFF;
+  }
