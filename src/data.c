@@ -429,4 +429,7 @@ uint16_t ngxArcDataPut(NGXARC arc, const void* data, uint32_t datalen, uint16_t 
 }
 
 void* ngxArcDataGet(NGXARC arc, uint16_t blkid, uint32_t* datalen){
-  NGXBLK root = ngxArcBlock(arc, blkid
+  NGXBLK root = ngxArcBlock(arc, blkid);
+  uint32_t totlen = 0;
+  uint32_t left = 0;
+  uint8_t
