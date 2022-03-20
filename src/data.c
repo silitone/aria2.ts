@@ -440,4 +440,5 @@ void* ngxArcDataGet(NGXARC arc, uint16_t blkid, uint32_t* datalen){
     return 0;
   }
 
-  memcpy(&totl
+  memcpy(&totlen, root->blkdata, sizeof(uint32_t));
+  result = (uint8_t*)
