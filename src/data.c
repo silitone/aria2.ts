@@ -436,4 +436,8 @@ void* ngxArcDataGet(NGXARC arc, uint16_t blkid, uint32_t* datalen){
   uint8_t* cursor = 0;
   uint32_t ln = 0;
 
-  if (roo
+  if (root == 0){
+    return 0;
+  }
+
+  memcpy(&totl
