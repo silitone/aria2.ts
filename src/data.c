@@ -432,4 +432,8 @@ void* ngxArcDataGet(NGXARC arc, uint16_t blkid, uint32_t* datalen){
   NGXBLK root = ngxArcBlock(arc, blkid);
   uint32_t totlen = 0;
   uint32_t left = 0;
-  uint8_t
+  uint8_t* result = 0;
+  uint8_t* cursor = 0;
+  uint32_t ln = 0;
+
+  if (roo
