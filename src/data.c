@@ -441,4 +441,6 @@ void* ngxArcDataGet(NGXARC arc, uint16_t blkid, uint32_t* datalen){
   }
 
   memcpy(&totlen, root->blkdata, sizeof(uint32_t));
-  result = (uint8_t*)
+  result = (uint8_t*)malloc(totlen);
+  if (result == 0) {
+    ngxBlockCle
