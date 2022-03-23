@@ -447,4 +447,7 @@ void* ngxArcDataGet(NGXARC arc, uint16_t blkid, uint32_t* datalen){
     return 0;
   }
 
-  cursor = re
+  cursor = result;
+  left = totlen;
+
+  ln = (left > (arc->blksz - sizeof
