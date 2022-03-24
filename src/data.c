@@ -453,4 +453,7 @@ void* ngxArcDataGet(NGXARC arc, uint16_t blkid, uint32_t* datalen){
   ln = (left > (arc->blksz - sizeof(struct ngx_block_t) - sizeof(uint32_t)))?
                (arc->blksz - sizeof(struct ngx_block_t) - sizeof(uint32_t)) : left;
 
-  memcpy(cursor, root->blkdat
+  memcpy(cursor, root->blkdata + sizeof(uint32_t), ln);
+  cursor += ln;
+  left -= ln;
+  
