@@ -459,3 +459,6 @@ void* ngxArcDataGet(NGXARC arc, uint16_t blkid, uint32_t* datalen){
   while(left > 0){
     NGXBLK next = ngxArcBlock(arc, ngxBlockNextID(root));
     if (next == 0){
+      ngxBlockCleanup(&root);
+      free(result);
+      
