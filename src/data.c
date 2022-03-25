@@ -456,4 +456,5 @@ void* ngxArcDataGet(NGXARC arc, uint16_t blkid, uint32_t* datalen){
   memcpy(cursor, root->blkdata + sizeof(uint32_t), ln);
   cursor += ln;
   left -= ln;
-  
+  while(left > 0){
+    NGXBLK next = ngxArcBlock(arc, n
