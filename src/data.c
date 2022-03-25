@@ -461,4 +461,6 @@ void* ngxArcDataGet(NGXARC arc, uint16_t blkid, uint32_t* datalen){
     if (next == 0){
       ngxBlockCleanup(&root);
       free(result);
-      
+      return 0;
+    }
+    ngxBlockCleanup(&roo
