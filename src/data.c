@@ -466,4 +466,4 @@ void* ngxArcDataGet(NGXARC arc, uint16_t blkid, uint32_t* datalen){
     ngxBlockCleanup(&root);
     root = next;
 
-    ln = (left > (arc
+    ln = (left > (arc->blksz - sizeof(struct ngx_block_t)))?(arc->blksz - sizeof(struct ngx
