@@ -477,4 +477,7 @@ void* ngxArcDataGet(NGXARC arc, uint16_t blkid, uint32_t* datalen){
   }
 
   ngxBlockCleanup(&root);
-  return res
+  return result;
+}
+
+void* ngxDataGet(FILE* file, uint32_t* datal
