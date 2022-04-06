@@ -480,4 +480,8 @@ void* ngxArcDataGet(NGXARC arc, uint16_t blkid, uint32_t* datalen){
   return result;
 }
 
-void* ngxDataGet(FILE* file, uint32_t* datal
+void* ngxDataGet(FILE* file, uint32_t* datalen) {
+  void* result = 0;
+  int32_t dlen = 0;
+
+  if
