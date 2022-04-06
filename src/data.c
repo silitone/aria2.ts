@@ -473,4 +473,8 @@ void* ngxArcDataGet(NGXARC arc, uint16_t blkid, uint32_t* datalen){
   }
 
   if (datalen != 0){
- 
+    *datalen = totlen;
+  }
+
+  ngxBlockCleanup(&root);
+  return res
