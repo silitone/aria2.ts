@@ -484,4 +484,5 @@ void* ngxDataGet(FILE* file, uint32_t* datalen) {
   void* result = 0;
   int32_t dlen = 0;
 
-  if
+  if (fseek(file, 0, SEEK_END) != 0){
+    DLOG("%s", "Seek failed");
