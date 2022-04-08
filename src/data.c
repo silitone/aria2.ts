@@ -491,4 +491,5 @@ void* ngxDataGet(FILE* file, uint32_t* datalen) {
 
   dlen = ftell(file);
   if (dlen < 0) {
-  
+    DLOG("%s", "Tell failed");
+    return 0
