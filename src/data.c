@@ -497,4 +497,8 @@ void* ngxDataGet(FILE* file, uint32_t* datalen) {
 
   result = malloc(dlen);
   if (result == 0){
-    D
+    DLOG("%s", "Malloc failed");
+    return 0;
+  }
+
+ 
