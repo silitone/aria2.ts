@@ -507,4 +507,5 @@ void* ngxDataGet(FILE* file, uint32_t* datalen) {
     return 0;
   }
 
-  if 
+  if (fread(result, dlen, 1, file) != 1){
+    DLOG("%s", "Rea
