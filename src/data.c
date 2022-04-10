@@ -508,4 +508,8 @@ void* ngxDataGet(FILE* file, uint32_t* datalen) {
   }
 
   if (fread(result, dlen, 1, file) != 1){
-    DLOG("%s", "Rea
+    DLOG("%s", "Read failed");
+    free(result);
+    return 0;
+  }
+
