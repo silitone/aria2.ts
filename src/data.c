@@ -513,3 +513,7 @@ void* ngxDataGet(FILE* file, uint32_t* datalen) {
     return 0;
   }
 
+  if (datalen != 0){
+    *datalen = dlen;
+  }
+  return re
