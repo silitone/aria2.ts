@@ -3,4 +3,6 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <s
+#include <stdarg.h>
+#include <time.h>
+#inc
