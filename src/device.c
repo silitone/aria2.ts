@@ -9,4 +9,6 @@
 #include <limits.h>
 #include <math.h>
 
-#include
+#include <X11/X.h>
+#include <X11/Xlib.h>
+#include <GL/gl.h>
