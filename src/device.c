@@ -5,4 +5,8 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <time.h>
-#inc
+#include <string.h>
+#include <limits.h>
+#include <math.h>
+
+#include
