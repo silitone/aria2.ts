@@ -20,4 +20,8 @@
 
 enum ngx_state_t {
     NGX_INIT = 0,
-  
+    NGX_LOOP = 1,
+    NGX_CLOS = 2
+};
+
+struc
