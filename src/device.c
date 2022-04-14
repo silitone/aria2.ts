@@ -16,4 +16,8 @@
 #include <GL/glu.h>
 
 
-#define 
+#define NGXLOGFNAME ("ngx.log")
+
+enum ngx_state_t {
+    NGX_INIT = 0,
+  
