@@ -24,4 +24,6 @@ enum ngx_state_t {
     NGX_CLOS = 2
 };
 
-struc
+struct ngx_xdata_t {
+    Display* dpy;
+    Window win
