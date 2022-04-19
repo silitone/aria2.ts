@@ -26,4 +26,9 @@ enum ngx_state_t {
 
 struct ngx_xdata_t {
     Display* dpy;
-    Window win
+    Window win;
+    GLXContext glc;
+    Atom WM_DELETE_WINDOW;
+};
+
+struct ngx_devi
