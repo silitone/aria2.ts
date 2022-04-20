@@ -34,4 +34,6 @@ struct ngx_xdata_t {
 struct ngx_device_t {
     struct ngx_xdata_t dsp;
     uint64_t counter;
-  
+    int state;
+    struct timespec start;
+    NGXDRAW
