@@ -31,4 +31,7 @@ struct ngx_xdata_t {
     Atom WM_DELETE_WINDOW;
 };
 
-struct ngx_devi
+struct ngx_device_t {
+    struct ngx_xdata_t dsp;
+    uint64_t counter;
+  
