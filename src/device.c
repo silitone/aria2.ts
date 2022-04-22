@@ -36,4 +36,6 @@ struct ngx_device_t {
     uint64_t counter;
     int state;
     struct timespec start;
-    NGXDRAW
+    NGXDRAWFUNC drawfunc;
+    NGXKEYFUNC keyfunc;
+    NGXLOADRESOURCEFU
