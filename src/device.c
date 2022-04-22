@@ -41,4 +41,9 @@ struct ngx_device_t {
     NGXLOADRESOURCEFUNC loadfunc;
     void* ptr;
     uint8_t keys[USHRT_MAX];
-    int 
+    int persp;
+    int width;
+    int height;
+};
+
+static
