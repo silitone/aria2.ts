@@ -38,4 +38,7 @@ struct ngx_device_t {
     struct timespec start;
     NGXDRAWFUNC drawfunc;
     NGXKEYFUNC keyfunc;
-    NGXLOADRESOURCEFU
+    NGXLOADRESOURCEFUNC loadfunc;
+    void* ptr;
+    uint8_t keys[USHRT_MAX];
+    int 
