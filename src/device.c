@@ -46,4 +46,8 @@ struct ngx_device_t {
     int height;
 };
 
-static
+static void ngxDefaultKey(int key, void* ptr) {
+    ;
+}
+
+static v
