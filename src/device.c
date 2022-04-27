@@ -56,4 +56,7 @@ static void ngxDefaultLoad(int load, void* ptr) {
 
 static double angle = 0.0;
 
-static void ngxDefaul
+static void ngxDefaultDraw(double dt, void* ptr) {
+    angle += dt * 10.0;
+
+    gluLookAt(10.0
