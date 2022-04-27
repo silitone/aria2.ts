@@ -50,4 +50,5 @@ static void ngxDefaultKey(int key, void* ptr) {
     ;
 }
 
-static v
+static void ngxDefaultLoad(int load, void* ptr) {
+    
