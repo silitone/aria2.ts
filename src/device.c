@@ -51,4 +51,9 @@ static void ngxDefaultKey(int key, void* ptr) {
 }
 
 static void ngxDefaultLoad(int load, void* ptr) {
-    
+    ;
+}
+
+static double angle = 0.0;
+
+static void ngxDefaul
