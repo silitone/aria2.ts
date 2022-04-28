@@ -60,4 +60,6 @@ static void ngxDefaultDraw(double dt, void* ptr) {
     angle += dt * 10.0;
 
     gluLookAt(10.0, 10.0, 10.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
-   
+    glRotatef(angle, 0.0f, 1.0f, 0.0f);
+
+    glBegin(
