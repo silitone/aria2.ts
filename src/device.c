@@ -62,4 +62,6 @@ static void ngxDefaultDraw(double dt, void* ptr) {
     gluLookAt(10.0, 10.0, 10.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
     glRotatef(angle, 0.0f, 1.0f, 0.0f);
 
-    glBegin(
+    glBegin(GL_TRIANGLES);
+
+    glColor3f(1.0f, 0.0f, 0.0f); // Крас
