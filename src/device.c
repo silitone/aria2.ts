@@ -83,4 +83,6 @@ static void ngxDefaultDraw(double dt, void* ptr) {
     glColor3f(0.0f, 1.0f, 0.0f); // Зеленный
     glVertex3f(1.0f, -1.0f, -1.0f); // Лево треугольника (Сзади)
     glColor3f(0.0f, 0.0f, 1.0f); // Синий
-    glV
+    glVertex3f(-1.0f, -1.0f, -1.0f); // Право треугольника (Сзади)
+
+  
