@@ -95,4 +95,7 @@ static void ngxDefaultDraw(double dt, void* ptr) {
     glEnd();
 }
 
-NGXDEVICE ngxIn
+NGXDEVICE ngxInit() {
+    NGXDEVICE dev = 0;
+    time_t now = 0;
+ 
