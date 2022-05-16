@@ -98,4 +98,6 @@ static void ngxDefaultDraw(double dt, void* ptr) {
 NGXDEVICE ngxInit() {
     NGXDEVICE dev = 0;
     time_t now = 0;
- 
+    struct tm nowtm;
+    char buffer[256];
+    FILE* lo
