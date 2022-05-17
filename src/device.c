@@ -100,4 +100,7 @@ NGXDEVICE ngxInit() {
     time_t now = 0;
     struct tm nowtm;
     char buffer[256];
-    FILE* lo
+    FILE* log = 0;
+
+    log = fopen(NGXLOGFNAME, "w");
+    
