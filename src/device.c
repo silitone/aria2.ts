@@ -104,4 +104,5 @@ NGXDEVICE ngxInit() {
 
     log = fopen(NGXLOGFNAME, "w");
     if (log == 0) {
-        fprintf(stderr, "Failed to 
+        fprintf(stderr, "Failed to open log file %s\n", NGXLOGFNAME);
+        retur
