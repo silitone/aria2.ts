@@ -110,4 +110,6 @@ NGXDEVICE ngxInit() {
 
     now = time(0);
     localtime_r(&now, &nowtm);
-    strft
+    strftime(buffer, 256, "%d %b %Y %H:%M:%S", &nowtm);
+
+    fpri
