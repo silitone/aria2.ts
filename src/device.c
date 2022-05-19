@@ -112,4 +112,5 @@ NGXDEVICE ngxInit() {
     localtime_r(&now, &nowtm);
     strftime(buffer, 256, "%d %b %Y %H:%M:%S", &nowtm);
 
-    fpri
+    fprintf(log, "=== NGX ===\n");
+    fprintf(log, "Cur
