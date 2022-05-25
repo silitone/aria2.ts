@@ -113,4 +113,6 @@ NGXDEVICE ngxInit() {
     strftime(buffer, 256, "%d %b %Y %H:%M:%S", &nowtm);
 
     fprintf(log, "=== NGX ===\n");
-    fprintf(log, "Cur
+    fprintf(log, "Current time: %s\n", buffer);
+
+    dev = malloc(sizeof 
