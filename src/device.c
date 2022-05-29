@@ -115,4 +115,6 @@ NGXDEVICE ngxInit() {
     fprintf(log, "=== NGX ===\n");
     fprintf(log, "Current time: %s\n", buffer);
 
-    dev = malloc(sizeof 
+    dev = malloc(sizeof (struct ngx_device_t));
+    if (dev == 0) {
+        fprintf(lo
