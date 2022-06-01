@@ -123,4 +123,6 @@ NGXDEVICE ngxInit() {
     }
 
     memset(&(dev->dsp), 0, sizeof (struct ngx_xdata_t));
-    dev->count
+    dev->counter = 0;
+    dev->state = NGX_INIT;
+    clock_gettime(CLOCK_MONO
