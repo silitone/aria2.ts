@@ -122,4 +122,5 @@ NGXDEVICE ngxInit() {
         return 0;
     }
 
-    memset(&(
+    memset(&(dev->dsp), 0, sizeof (struct ngx_xdata_t));
+    dev->count
