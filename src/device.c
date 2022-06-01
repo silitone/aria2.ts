@@ -117,4 +117,9 @@ NGXDEVICE ngxInit() {
 
     dev = malloc(sizeof (struct ngx_device_t));
     if (dev == 0) {
-        fprintf(log, "Failed to allocate memory for device\n")
+        fprintf(log, "Failed to allocate memory for device\n");
+        fclose(log);
+        return 0;
+    }
+
+    memset(&(
