@@ -127,4 +127,5 @@ NGXDEVICE ngxInit() {
     dev->state = NGX_INIT;
     clock_gettime(CLOCK_MONOTONIC, &dev->start);
     dev->drawfunc = ngxDefaultDraw;
-  
+    dev->keyfunc = ngxDefaultKey;
+    dev->loadfu
