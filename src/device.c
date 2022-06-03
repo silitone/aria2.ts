@@ -125,4 +125,6 @@ NGXDEVICE ngxInit() {
     memset(&(dev->dsp), 0, sizeof (struct ngx_xdata_t));
     dev->counter = 0;
     dev->state = NGX_INIT;
-    clock_gettime(CLOCK_MONO
+    clock_gettime(CLOCK_MONOTONIC, &dev->start);
+    dev->drawfunc = ngxDefaultDraw;
+  
