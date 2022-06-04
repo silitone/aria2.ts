@@ -128,4 +128,6 @@ NGXDEVICE ngxInit() {
     clock_gettime(CLOCK_MONOTONIC, &dev->start);
     dev->drawfunc = ngxDefaultDraw;
     dev->keyfunc = ngxDefaultKey;
-    dev->loadfu
+    dev->loadfunc = ngxDefaultLoad;
+    memset(dev->keys, 0, USHRT_MAX);
+  
