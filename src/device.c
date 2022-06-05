@@ -130,4 +130,6 @@ NGXDEVICE ngxInit() {
     dev->keyfunc = ngxDefaultKey;
     dev->loadfunc = ngxDefaultLoad;
     memset(dev->keys, 0, USHRT_MAX);
-  
+    dev->persp = 0;
+    dev->width = 800;
+    dev->height
