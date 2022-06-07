@@ -132,4 +132,9 @@ NGXDEVICE ngxInit() {
     memset(dev->keys, 0, USHRT_MAX);
     dev->persp = 0;
     dev->width = 800;
-    dev->height
+    dev->height = 600;
+    fclose(log);
+    return dev;
+}
+
+double ngxNow(const N
