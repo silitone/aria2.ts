@@ -137,4 +137,6 @@ NGXDEVICE ngxInit() {
     return dev;
 }
 
-double ngxNow(const N
+double ngxNow(const NGXDEVICE dev) {
+    struct timespec ts;
+    struct times
