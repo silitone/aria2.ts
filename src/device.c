@@ -139,4 +139,7 @@ NGXDEVICE ngxInit() {
 
 double ngxNow(const NGXDEVICE dev) {
     struct timespec ts;
-    struct times
+    struct timespec start;
+
+    if (dev == 0) {
+        retu
