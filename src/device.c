@@ -142,4 +142,7 @@ double ngxNow(const NGXDEVICE dev) {
     struct timespec start;
 
     if (dev == 0) {
-        retu
+        return -1.0;
+    }
+    start = dev->start;
+    clock_getti
