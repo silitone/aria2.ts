@@ -147,4 +147,5 @@ double ngxNow(const NGXDEVICE dev) {
     start = dev->start;
     clock_gettime(CLOCK_MONOTONIC, &ts);
 
-    if (start.tv_nsec < ts.tv_nsec)
+    if (start.tv_nsec < ts.tv_nsec) {
+        return (ts.tv_sec - start.tv_sec) + (
