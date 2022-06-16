@@ -150,4 +150,7 @@ double ngxNow(const NGXDEVICE dev) {
     if (start.tv_nsec < ts.tv_nsec) {
         return (ts.tv_sec - start.tv_sec) + (ts.tv_nsec - start.tv_nsec)*1.0e-9;
     }
-    return (ts.tv_sec - start.tv_sec - 1) + (ts.
+    return (ts.tv_sec - start.tv_sec - 1) + (ts.tv_nsec - start.tv_nsec + 1e9)*1.0e-9;
+}
+
+int ngx
