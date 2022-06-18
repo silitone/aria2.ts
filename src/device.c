@@ -153,4 +153,5 @@ double ngxNow(const NGXDEVICE dev) {
     return (ts.tv_sec - start.tv_sec - 1) + (ts.tv_nsec - start.tv_nsec + 1e9)*1.0e-9;
 }
 
-int ngx
+int ngxLog(const NGXDEVICE dev, const char* format, ...) {
+    F
