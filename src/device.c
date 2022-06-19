@@ -159,4 +159,7 @@ int ngxLog(const NGXDEVICE dev, const char* format, ...) {
 
     if (log == 0) {
         return -1;
-   
+    }
+
+    fprintf(log, "[%15.5f] ", ngxNow(dev));
+    
