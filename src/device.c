@@ -155,4 +155,8 @@ double ngxNow(const NGXDEVICE dev) {
 
 int ngxLog(const NGXDEVICE dev, const char* format, ...) {
     FILE* log = fopen(NGXLOGFNAME, "a");
-    
+    va_list vl;
+
+    if (log == 0) {
+        return -1;
+   
