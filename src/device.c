@@ -164,4 +164,7 @@ int ngxLog(const NGXDEVICE dev, const char* format, ...) {
     fprintf(log, "[%15.5f] ", ngxNow(dev));
     va_start(vl, format);
     vfprintf(log, format, vl);
-    va_end(vl)
+    va_end(vl);
+    fprintf(log, "\n");
+    fclose(log);
+    return
