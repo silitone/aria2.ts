@@ -171,4 +171,6 @@ int ngxLog(const NGXDEVICE dev, const char* format, ...) {
 }
 
 void ngxCleanup(NGXDEVICE* pdev) {
-    if ((pdev != 0)&&((*pde
+    if ((pdev != 0)&&((*pdev) != 0)) {
+        free(*pdev);
+        *pdev = 
