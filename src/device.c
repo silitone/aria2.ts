@@ -167,4 +167,8 @@ int ngxLog(const NGXDEVICE dev, const char* format, ...) {
     va_end(vl);
     fprintf(log, "\n");
     fclose(log);
-    return
+    return 0;
+}
+
+void ngxCleanup(NGXDEVICE* pdev) {
+    if ((pdev != 0)&&((*pde
