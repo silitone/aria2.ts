@@ -178,4 +178,6 @@ void ngxCleanup(NGXDEVICE* pdev) {
 }
 
 int ngxOpenWindow(NGXDEVICE dev) {
-    struct 
+    struct ngx_xdata_t tdsp;
+    Window root;
+    XVisualIn
