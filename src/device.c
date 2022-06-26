@@ -182,4 +182,7 @@ int ngxOpenWindow(NGXDEVICE dev) {
     Window root;
     XVisualInfo* vi;
     GLint attr[] = {
-        GLX_RG
+        GLX_RGBA,
+        GLX_DEPTH_SIZE, 24,
+        GLX_DOUBLEBUFFER,
+  
