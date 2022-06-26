@@ -180,4 +180,6 @@ void ngxCleanup(NGXDEVICE* pdev) {
 int ngxOpenWindow(NGXDEVICE dev) {
     struct ngx_xdata_t tdsp;
     Window root;
-    XVisualIn
+    XVisualInfo* vi;
+    GLint attr[] = {
+        GLX_RG
