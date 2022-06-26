@@ -185,4 +185,7 @@ int ngxOpenWindow(NGXDEVICE dev) {
         GLX_RGBA,
         GLX_DEPTH_SIZE, 24,
         GLX_DOUBLEBUFFER,
-  
+        None
+    };
+    Colormap cmap;
+    XSetWind
