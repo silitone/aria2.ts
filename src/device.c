@@ -188,4 +188,7 @@ int ngxOpenWindow(NGXDEVICE dev) {
         None
     };
     Colormap cmap;
-    XSetWind
+    XSetWindowAttributes swa;
+
+    tdsp.dpy = XOpenDisplay(0);
+    if
