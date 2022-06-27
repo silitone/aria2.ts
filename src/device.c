@@ -192,4 +192,8 @@ int ngxOpenWindow(NGXDEVICE dev) {
 
     tdsp.dpy = XOpenDisplay(0);
     if (tdsp.dpy == 0) {
-        ngxLog(dev, "Can't o
+        ngxLog(dev, "Can't open display");
+        return -1;
+    }
+
+    root
