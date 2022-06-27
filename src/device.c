@@ -191,4 +191,5 @@ int ngxOpenWindow(NGXDEVICE dev) {
     XSetWindowAttributes swa;
 
     tdsp.dpy = XOpenDisplay(0);
-    if
+    if (tdsp.dpy == 0) {
+        ngxLog(dev, "Can't o
