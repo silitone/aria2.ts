@@ -196,4 +196,6 @@ int ngxOpenWindow(NGXDEVICE dev) {
         return -1;
     }
 
-    root
+    root = DefaultRootWindow(tdsp.dpy);
+
+    vi = glXChooseVisual(td
