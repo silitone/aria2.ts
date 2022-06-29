@@ -198,4 +198,7 @@ int ngxOpenWindow(NGXDEVICE dev) {
 
     root = DefaultRootWindow(tdsp.dpy);
 
-    vi = glXChooseVisual(td
+    vi = glXChooseVisual(tdsp.dpy, 0, attr);
+
+    if (vi == 0) {
+        ngxLog(dev, "
