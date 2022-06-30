@@ -201,4 +201,5 @@ int ngxOpenWindow(NGXDEVICE dev) {
     vi = glXChooseVisual(tdsp.dpy, 0, attr);
 
     if (vi == 0) {
-        ngxLog(dev, "
+        ngxLog(dev, "No visuals found");
+        XCloseDisplay(t
