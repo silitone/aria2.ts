@@ -202,4 +202,8 @@ int ngxOpenWindow(NGXDEVICE dev) {
 
     if (vi == 0) {
         ngxLog(dev, "No visuals found");
-        XCloseDisplay(t
+        XCloseDisplay(tdsp.dpy);
+        return -1;
+    }
+
+    ngxLog(dev, "Current visuals: %
