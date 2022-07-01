@@ -206,4 +206,6 @@ int ngxOpenWindow(NGXDEVICE dev) {
         return -1;
     }
 
-    ngxLog(dev, "Current visuals: %
+    ngxLog(dev, "Current visuals: %p", (void*) vi->visualid);
+
+    cmap = XCreateColo
