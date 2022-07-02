@@ -208,4 +208,6 @@ int ngxOpenWindow(NGXDEVICE dev) {
 
     ngxLog(dev, "Current visuals: %p", (void*) vi->visualid);
 
-    cmap = XCreateColo
+    cmap = XCreateColormap(tdsp.dpy, root, vi->visual, AllocNone);
+
+    swa.color
