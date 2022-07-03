@@ -211,4 +211,6 @@ int ngxOpenWindow(NGXDEVICE dev) {
     cmap = XCreateColormap(tdsp.dpy, root, vi->visual, AllocNone);
 
     swa.colormap = cmap;
-    swa.event_mask = ExposureMask | KeyPress
+    swa.event_mask = ExposureMask | KeyPressMask | KeyReleaseMask | StructureNotifyMask;
+
+    tdsp.wi
