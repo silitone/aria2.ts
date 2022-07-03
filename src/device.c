@@ -215,4 +215,6 @@ int ngxOpenWindow(NGXDEVICE dev) {
 
     tdsp.win = XCreateWindow(
             tdsp.dpy,
-          
+            root,
+            0, 0,
+            dev->width,
