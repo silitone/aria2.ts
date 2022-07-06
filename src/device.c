@@ -219,4 +219,6 @@ int ngxOpenWindow(NGXDEVICE dev) {
             0, 0,
             dev->width, dev->height,
             0,
-    
+            vi->depth,
+            InputOutput,
+            vi->visua
