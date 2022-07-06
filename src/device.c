@@ -221,4 +221,5 @@ int ngxOpenWindow(NGXDEVICE dev) {
             0,
             vi->depth,
             InputOutput,
-            vi->visua
+            vi->visual,
+            CWColormap | CWEventMask, &sw
