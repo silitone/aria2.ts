@@ -222,4 +222,7 @@ int ngxOpenWindow(NGXDEVICE dev) {
             vi->depth,
             InputOutput,
             vi->visual,
-            CWColormap | CWEventMask, &sw
+            CWColormap | CWEventMask, &swa
+            );
+
+    XMapWindow(tdsp.dp
