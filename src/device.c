@@ -226,4 +226,6 @@ int ngxOpenWindow(NGXDEVICE dev) {
             );
 
     XMapWindow(tdsp.dpy, tdsp.win);
-    XStoreName(tdsp.dpy, tdsp.wi
+    XStoreName(tdsp.dpy, tdsp.win, "NGXDevice");
+
+    tdsp.WM_DELETE_WINDOW = XInternAtom(td
