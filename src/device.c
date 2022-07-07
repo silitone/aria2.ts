@@ -225,4 +225,5 @@ int ngxOpenWindow(NGXDEVICE dev) {
             CWColormap | CWEventMask, &swa
             );
 
-    XMapWindow(tdsp.dp
+    XMapWindow(tdsp.dpy, tdsp.win);
+    XStoreName(tdsp.dpy, tdsp.wi
