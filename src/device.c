@@ -236,4 +236,6 @@ int ngxOpenWindow(NGXDEVICE dev) {
 
     glClearDepth(1.0f);
     glEnable(GL_DEPTH_TEST);
-    glDep
+    glDepthFunc(GL_LEQUAL);
+    glEnable(GL_TEXTURE_2D);
+    glE
