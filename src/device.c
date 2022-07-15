@@ -231,4 +231,7 @@ int ngxOpenWindow(NGXDEVICE dev) {
     tdsp.WM_DELETE_WINDOW = XInternAtom(tdsp.dpy, "WM_DELETE_WINDOW", False);
     XSetWMProtocols(tdsp.dpy, tdsp.win, &tdsp.WM_DELETE_WINDOW, 1);
 
-    tdsp.glc = glXCreateContext(tdsp.dpy, vi, NULL, GL_TRU
+    tdsp.glc = glXCreateContext(tdsp.dpy, vi, NULL, GL_TRUE);
+    glXMakeCurrent(tdsp.dpy, tdsp.win, tdsp.glc);
+
+    glClearDepth(
