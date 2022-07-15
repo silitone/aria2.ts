@@ -234,4 +234,6 @@ int ngxOpenWindow(NGXDEVICE dev) {
     tdsp.glc = glXCreateContext(tdsp.dpy, vi, NULL, GL_TRUE);
     glXMakeCurrent(tdsp.dpy, tdsp.win, tdsp.glc);
 
-    glClearDepth(
+    glClearDepth(1.0f);
+    glEnable(GL_DEPTH_TEST);
+    glDep
