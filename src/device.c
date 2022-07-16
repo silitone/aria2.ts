@@ -241,4 +241,8 @@ int ngxOpenWindow(NGXDEVICE dev) {
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-    memcpy(&dev->dsp, &tdsp, sizeof (struct ngx_xdat
+    memcpy(&dev->dsp, &tdsp, sizeof (struct ngx_xdata_t));
+    return 0;
+}
+
+void ngxCloseWindow(NGXD
