@@ -239,4 +239,6 @@ int ngxOpenWindow(NGXDEVICE dev) {
     glDepthFunc(GL_LEQUAL);
     glEnable(GL_TEXTURE_2D);
     glEnable(GL_BLEND);
-    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPH
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+    memcpy(&dev->dsp, &tdsp, sizeof (struct ngx_xdat
