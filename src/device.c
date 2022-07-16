@@ -245,4 +245,6 @@ int ngxOpenWindow(NGXDEVICE dev) {
     return 0;
 }
 
-void ngxCloseWindow(NGXD
+void ngxCloseWindow(NGXDEVICE dev) {
+    ngxLog(dev, "=== CLEANUP ===");
+    glXMakeCurr
