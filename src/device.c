@@ -248,4 +248,5 @@ int ngxOpenWindow(NGXDEVICE dev) {
 void ngxCloseWindow(NGXDEVICE dev) {
     ngxLog(dev, "=== CLEANUP ===");
     glXMakeCurrent(dev->dsp.dpy, None, 0);
-    glXDestroyContext(dev->dsp.dpy, 
+    glXDestroyContext(dev->dsp.dpy, dev->dsp.glc);
+    XDestroyWindow(dev->dsp.dpy, dev->dsp.win)
