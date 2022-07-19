@@ -249,4 +249,8 @@ void ngxCloseWindow(NGXDEVICE dev) {
     ngxLog(dev, "=== CLEANUP ===");
     glXMakeCurrent(dev->dsp.dpy, None, 0);
     glXDestroyContext(dev->dsp.dpy, dev->dsp.glc);
-    XDestroyWindow(dev->dsp.dpy, dev->dsp.win)
+    XDestroyWindow(dev->dsp.dpy, dev->dsp.win);
+    XCloseDisplay(dev->dsp.dpy);
+}
+
+void SetPerspective(
