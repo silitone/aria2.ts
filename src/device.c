@@ -253,4 +253,4 @@ void ngxCloseWindow(NGXDEVICE dev) {
     XCloseDisplay(dev->dsp.dpy);
 }
 
-void SetPerspective(
+void SetPerspective(int enable, double fovY, double aspect, double zNear, dou
