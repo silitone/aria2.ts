@@ -256,4 +256,5 @@ void ngxCloseWindow(NGXDEVICE dev) {
 void SetPerspective(int enable, double fovY, double aspect, double zNear, double zFar) {
     const GLdouble pi = 3.1415926535897932384626433832795;
     GLdouble fW, fH;
-    fH = tan(f
+    fH = tan(fovY / 360 * pi) * zNear;
+    fW = fH *
