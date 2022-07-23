@@ -253,4 +253,5 @@ void ngxCloseWindow(NGXDEVICE dev) {
     XCloseDisplay(dev->dsp.dpy);
 }
 
-void SetPerspective(int enable, double fovY, double aspect, double zNear, dou
+void SetPerspective(int enable, double fovY, double aspect, double zNear, double zFar) {
+    const GLdouble pi = 3.141592653589793
