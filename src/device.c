@@ -263,4 +263,5 @@ void SetPerspective(int enable, double fovY, double aspect, double zNear, double
         case 0:
             fW *= 180.0;
             fH *= 180.0;
-            glOr
+            glOrtho(-fW, fW, -fH, fH, zNear, zFar);
+            break;
