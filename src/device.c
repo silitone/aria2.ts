@@ -265,3 +265,5 @@ void SetPerspective(int enable, double fovY, double aspect, double zNear, double
             fH *= 180.0;
             glOrtho(-fW, fW, -fH, fH, zNear, zFar);
             break;
+        case 1:
+            glFrustum(-fW, fW
