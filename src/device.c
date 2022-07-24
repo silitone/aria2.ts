@@ -257,4 +257,8 @@ void SetPerspective(int enable, double fovY, double aspect, double zNear, double
     const GLdouble pi = 3.1415926535897932384626433832795;
     GLdouble fW, fH;
     fH = tan(fovY / 360 * pi) * zNear;
-    fW = fH *
+    fW = fH * aspect;
+
+    switch (enable) {
+        case 0:
+       
