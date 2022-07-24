@@ -261,4 +261,6 @@ void SetPerspective(int enable, double fovY, double aspect, double zNear, double
 
     switch (enable) {
         case 0:
-       
+            fW *= 180.0;
+            fH *= 180.0;
+            glOr
