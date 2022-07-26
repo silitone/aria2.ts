@@ -269,3 +269,6 @@ void SetPerspective(int enable, double fovY, double aspect, double zNear, double
             glFrustum(-fW, fW, -fH, fH, zNear, zFar);
             break;
         case 2:
+        {
+            int iViewport[4];
+            glGe
