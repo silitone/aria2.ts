@@ -272,4 +272,4 @@ void SetPerspective(int enable, double fovY, double aspect, double zNear, double
         {
             int iViewport[4];
             glGetIntegerv(GL_VIEWPORT, iViewport);
-            glOrth
+            glOrtho(iViewport[0], iViewport[0] + iViewport[2] / 2
