@@ -275,4 +275,10 @@ void SetPerspective(int enable, double fovY, double aspect, double zNear, double
             glOrtho(iViewport[0], iViewport[0] + iViewport[2] / 2,
                     iViewport[1] + iViewport[3] / 2, iViewport[1], -1, 1);
             break;
-      
+        }
+    }
+}
+
+void Scene(NGXDEVICE dev, double delta) {
+
+    glViewport
