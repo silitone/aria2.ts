@@ -282,4 +282,7 @@ void SetPerspective(int enable, double fovY, double aspect, double zNear, double
 void Scene(NGXDEVICE dev, double delta) {
 
     glViewport(0, 0, dev->width, dev->height);
-    glMatri
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+
+    SetPers
