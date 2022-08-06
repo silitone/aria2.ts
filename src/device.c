@@ -285,4 +285,6 @@ void Scene(NGXDEVICE dev, double delta) {
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
 
-    SetPerspective(dev->persp, 45.0, dev->width / ((double) 
+    SetPerspective(dev->persp, 45.0, dev->width / ((double) dev->height), 0.1, 1000.0);
+
+    glMatrixMode(GL_MOD
