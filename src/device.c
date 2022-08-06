@@ -290,4 +290,8 @@ void Scene(NGXDEVICE dev, double delta) {
     glMatrixMode(GL_MODELVIEW);
 
     glLoadIdentity();
-    dev->dra
+    dev->drawfunc(delta, dev->ptr);
+
+}
+
+int ngxShutdown(NGXD
