@@ -296,4 +296,7 @@ void Scene(NGXDEVICE dev, double delta) {
 
 int ngxShutdown(NGXDEVICE dev) {
     if (dev != 0) {
-        dev->st
+        dev->state = NGX_CLOS;
+        return 0;
+    }
+    retur
