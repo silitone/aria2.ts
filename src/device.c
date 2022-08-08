@@ -299,4 +299,7 @@ int ngxShutdown(NGXDEVICE dev) {
         dev->state = NGX_CLOS;
         return 0;
     }
-    retur
+    return -1;
+}
+
+int ngxIsKeyDown(const NGXDEVICE dev, int ke
