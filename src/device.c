@@ -294,4 +294,6 @@ void Scene(NGXDEVICE dev, double delta) {
 
 }
 
-int ngxShutdown(NGXD
+int ngxShutdown(NGXDEVICE dev) {
+    if (dev != 0) {
+        dev->st
