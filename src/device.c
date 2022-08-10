@@ -302,4 +302,6 @@ int ngxShutdown(NGXDEVICE dev) {
     return -1;
 }
 
-int ngxIsKeyDown(const NGXDEVICE dev, int ke
+int ngxIsKeyDown(const NGXDEVICE dev, int key) {
+    return (dev->keys[key % USHRT_MAX] != 0);
+}
