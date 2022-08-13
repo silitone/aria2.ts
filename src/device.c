@@ -308,4 +308,8 @@ int ngxIsKeyDown(const NGXDEVICE dev, int key) {
 
 double timed = 0.0;
 
-int ngxUpdate(NGXDEVICE dev)
+int ngxUpdate(NGXDEVICE dev) {
+    int result = 0;
+    double now = 0.0;
+
+    switch (dev-
