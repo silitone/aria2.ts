@@ -312,4 +312,6 @@ int ngxUpdate(NGXDEVICE dev) {
     int result = 0;
     double now = 0.0;
 
-    switch (dev-
+    switch (dev->state) {
+        case NGX_INIT:
+            ngxLog(dev, "
