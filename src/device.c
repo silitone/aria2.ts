@@ -314,4 +314,5 @@ int ngxUpdate(NGXDEVICE dev) {
 
     switch (dev->state) {
         case NGX_INIT:
-            ngxLog(dev, "
+            ngxLog(dev, "=== INIT ===");
+            result = ngxOpe
