@@ -315,4 +315,5 @@ int ngxUpdate(NGXDEVICE dev) {
     switch (dev->state) {
         case NGX_INIT:
             ngxLog(dev, "=== INIT ===");
-            result = ngxOpe
+            result = ngxOpenWindow(dev);
+            if (result ==
