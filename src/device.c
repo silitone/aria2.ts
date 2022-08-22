@@ -318,4 +318,5 @@ int ngxUpdate(NGXDEVICE dev) {
             result = ngxOpenWindow(dev);
             if (result == 0) {
                 dev->loadfunc(1, dev->ptr);
-        
+                dev->state = NGX_LOOP;
+                tim
