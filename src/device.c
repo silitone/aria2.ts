@@ -316,4 +316,6 @@ int ngxUpdate(NGXDEVICE dev) {
         case NGX_INIT:
             ngxLog(dev, "=== INIT ===");
             result = ngxOpenWindow(dev);
-            if (result ==
+            if (result == 0) {
+                dev->loadfunc(1, dev->ptr);
+        
