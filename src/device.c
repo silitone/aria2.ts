@@ -319,4 +319,6 @@ int ngxUpdate(NGXDEVICE dev) {
             if (result == 0) {
                 dev->loadfunc(1, dev->ptr);
                 dev->state = NGX_LOOP;
-                tim
+                timed = ngxNow(dev);
+                return 1;
+ 
