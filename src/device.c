@@ -321,4 +321,5 @@ int ngxUpdate(NGXDEVICE dev) {
                 dev->state = NGX_LOOP;
                 timed = ngxNow(dev);
                 return 1;
- 
+            } else {
+                ngxLog(dev, "Failed to
