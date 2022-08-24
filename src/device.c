@@ -322,4 +322,5 @@ int ngxUpdate(NGXDEVICE dev) {
                 timed = ngxNow(dev);
                 return 1;
             } else {
-                ngxLog(dev, "Failed to
+                ngxLog(dev, "Failed to open display with code %d", result);
+                re
