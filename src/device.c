@@ -326,4 +326,6 @@ int ngxUpdate(NGXDEVICE dev) {
                 return 0;
             }
         case NGX_LOOP:
-    
+            ++dev->counter;
+
+            resul
