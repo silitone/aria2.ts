@@ -323,4 +323,7 @@ int ngxUpdate(NGXDEVICE dev) {
                 return 1;
             } else {
                 ngxLog(dev, "Failed to open display with code %d", result);
-                re
+                return 0;
+            }
+        case NGX_LOOP:
+    
