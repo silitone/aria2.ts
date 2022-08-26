@@ -328,4 +328,5 @@ int ngxUpdate(NGXDEVICE dev) {
         case NGX_LOOP:
             ++dev->counter;
 
-            resul
+            result = XPending(dev->dsp.dpy);
+            while (result-
