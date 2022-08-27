@@ -331,4 +331,5 @@ int ngxUpdate(NGXDEVICE dev) {
             result = XPending(dev->dsp.dpy);
             while (result-- > 0) {
                 XEvent evt;
-                XNextE
+                XNextEvent(dev->dsp.dpy, &evt);
+                switch (evt.type) {
