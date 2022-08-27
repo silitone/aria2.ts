@@ -329,4 +329,6 @@ int ngxUpdate(NGXDEVICE dev) {
             ++dev->counter;
 
             result = XPending(dev->dsp.dpy);
-            while (result-
+            while (result-- > 0) {
+                XEvent evt;
+                XNextE
