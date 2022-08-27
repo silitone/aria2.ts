@@ -333,3 +333,5 @@ int ngxUpdate(NGXDEVICE dev) {
                 XEvent evt;
                 XNextEvent(dev->dsp.dpy, &evt);
                 switch (evt.type) {
+                    case Expose:
+                 
