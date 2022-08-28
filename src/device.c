@@ -337,3 +337,5 @@ int ngxUpdate(NGXDEVICE dev) {
                         goto RENDER;
                     case ClientMessage:
                         dev->state = NGX_CLOS;
+                        break;
+             
