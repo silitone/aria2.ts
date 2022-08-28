@@ -335,4 +335,5 @@ int ngxUpdate(NGXDEVICE dev) {
                 switch (evt.type) {
                     case Expose:
                         goto RENDER;
-                    case Clien
+                    case ClientMessage:
+                        dev->state = NGX_CLOS;
