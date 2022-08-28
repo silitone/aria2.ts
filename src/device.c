@@ -334,4 +334,5 @@ int ngxUpdate(NGXDEVICE dev) {
                 XNextEvent(dev->dsp.dpy, &evt);
                 switch (evt.type) {
                     case Expose:
-                 
+                        goto RENDER;
+                    case Clien
