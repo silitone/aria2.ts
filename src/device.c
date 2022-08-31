@@ -338,4 +338,6 @@ int ngxUpdate(NGXDEVICE dev) {
                     case ClientMessage:
                         dev->state = NGX_CLOS;
                         break;
-             
+                    case KeyPress:
+                    {
+                   
