@@ -341,4 +341,5 @@ int ngxUpdate(NGXDEVICE dev) {
                     case KeyPress:
                     {
                         int key = XLookupKeysym(&evt.xkey, ((evt.xkey.state & ShiftMask) != 0));
-                        if (key < USH
+                        if (key < USHRT_MAX) {
+                            
