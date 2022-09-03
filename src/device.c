@@ -343,4 +343,6 @@ int ngxUpdate(NGXDEVICE dev) {
                         int key = XLookupKeysym(&evt.xkey, ((evt.xkey.state & ShiftMask) != 0));
                         if (key < USHRT_MAX) {
                             dev->keys[key] = 1;
-                            dev->keyfunc(key, d
+                            dev->keyfunc(key, dev->ptr);
+                        } else {
+          
