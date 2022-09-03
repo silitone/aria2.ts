@@ -345,4 +345,5 @@ int ngxUpdate(NGXDEVICE dev) {
                             dev->keys[key] = 1;
                             dev->keyfunc(key, dev->ptr);
                         } else {
-          
+                            ngxLog(dev, "Bad code: %X", key);
+           
