@@ -348,4 +348,6 @@ int ngxUpdate(NGXDEVICE dev) {
                             ngxLog(dev, "Bad code: %X", key);
                         }
                         break;
-              
+                    }
+                    case KeyRelease:
+            
