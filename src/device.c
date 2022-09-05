@@ -351,4 +351,5 @@ int ngxUpdate(NGXDEVICE dev) {
                     }
                     case KeyRelease:
                     {
-                        int key = XLookupKeysym(&e
+                        int key = XLookupKeysym(&evt.xkey, ((evt.xkey.state & ShiftMask) != 0));
+            
