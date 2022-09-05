@@ -350,4 +350,5 @@ int ngxUpdate(NGXDEVICE dev) {
                         break;
                     }
                     case KeyRelease:
-            
+                    {
+                        int key = XLookupKeysym(&e
