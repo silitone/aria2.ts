@@ -355,3 +355,4 @@ int ngxUpdate(NGXDEVICE dev) {
                         if (key < USHRT_MAX) {
                             dev->keys[key] = 0;
                         } else {
+                            ngxLog(dev, "Bad cod
