@@ -357,4 +357,6 @@ int ngxUpdate(NGXDEVICE dev) {
                         } else {
                             ngxLog(dev, "Bad code: %d", key);
                         }
- 
+                        break;
+                    }
+    
