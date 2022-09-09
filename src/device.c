@@ -359,4 +359,5 @@ int ngxUpdate(NGXDEVICE dev) {
                         }
                         break;
                     }
-    
+                    case ConfigureNotify:
+        
