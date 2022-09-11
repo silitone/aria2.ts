@@ -362,4 +362,5 @@ int ngxUpdate(NGXDEVICE dev) {
                     case ConfigureNotify:
                     {
                         if ((evt.xconfigure.width != dev->width) && (evt.xconfigure.height != dev->height)) {
-                            dev->width
+                            dev->width = evt.xconfigure.width;
+                        
