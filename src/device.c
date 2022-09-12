@@ -364,4 +364,6 @@ int ngxUpdate(NGXDEVICE dev) {
                         if ((evt.xconfigure.width != dev->width) && (evt.xconfigure.height != dev->height)) {
                             dev->width = evt.xconfigure.width;
                             dev->height = evt.xconfigure.height;
+                            goto RENDER;
+                        }
                         
