@@ -366,4 +366,7 @@ int ngxUpdate(NGXDEVICE dev) {
                             dev->height = evt.xconfigure.height;
                             goto RENDER;
                         }
-                        
+                        break;
+                    }
+                    default:
+            
