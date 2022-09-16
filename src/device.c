@@ -370,4 +370,9 @@ int ngxUpdate(NGXDEVICE dev) {
                     }
                     default:
                         ngxLog(dev, "Event%X", evt.type);
-         
+                }
+            }
+
+RENDER:
+
+            now = ngxN
