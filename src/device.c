@@ -375,4 +375,5 @@ int ngxUpdate(NGXDEVICE dev) {
 
 RENDER:
 
-            now = ngxN
+            now = ngxNow(dev);
+            glClear(GL_COLOR_BUFFER_BIT | G
