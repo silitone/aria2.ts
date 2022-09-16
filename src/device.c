@@ -369,4 +369,5 @@ int ngxUpdate(NGXDEVICE dev) {
                         break;
                     }
                     default:
-            
+                        ngxLog(dev, "Event%X", evt.type);
+         
