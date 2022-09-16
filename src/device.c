@@ -376,4 +376,6 @@ int ngxUpdate(NGXDEVICE dev) {
 RENDER:
 
             now = ngxNow(dev);
-            glClear(GL_COLOR_BUFFER_BIT | G
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+            Scene(dev, now - timed);
+  
