@@ -383,4 +383,5 @@ RENDER:
 
             return 1;
 
- 
+        case NGX_CLOS:
+            dev->loadfunc(0,
