@@ -384,4 +384,6 @@ RENDER:
             return 1;
 
         case NGX_CLOS:
-            dev->loadfunc(0,
+            dev->loadfunc(0, dev->ptr);
+            ngxCloseWindow(dev);
+            ret
