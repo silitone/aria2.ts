@@ -393,4 +393,4 @@ RENDER:
 
 }
 
-int n
+int ngxDrawFunc(NGXDEVICE dev, NGXDRAWFUNC
