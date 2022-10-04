@@ -399,4 +399,7 @@ int ngxDrawFunc(NGXDEVICE dev, NGXDRAWFUNC func) {
     }
 
     if (func == 0) {
-        dev->drawfunc = ngxDefa
+        dev->drawfunc = ngxDefaultDraw;
+        return 0;
+    }
+    dev->drawfunc =
