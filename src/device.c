@@ -396,4 +396,7 @@ RENDER:
 int ngxDrawFunc(NGXDEVICE dev, NGXDRAWFUNC func) {
     if (dev == 0) {
         return -1;
-    
+    }
+
+    if (func == 0) {
+        dev->drawfunc = ngxDefa
