@@ -402,4 +402,9 @@ int ngxDrawFunc(NGXDEVICE dev, NGXDRAWFUNC func) {
         dev->drawfunc = ngxDefaultDraw;
         return 0;
     }
-    dev->drawfunc =
+    dev->drawfunc = func;
+    return 0;
+}
+
+int ngxKeyFunc(NGXDEVICE dev, NGXKEYFUNC func) {
+ 
