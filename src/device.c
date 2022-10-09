@@ -407,4 +407,8 @@ int ngxDrawFunc(NGXDEVICE dev, NGXDRAWFUNC func) {
 }
 
 int ngxKeyFunc(NGXDEVICE dev, NGXKEYFUNC func) {
- 
+    if (dev == 0) {
+        return -1;
+    }
+
+    if (func
