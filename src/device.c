@@ -411,4 +411,5 @@ int ngxKeyFunc(NGXDEVICE dev, NGXKEYFUNC func) {
         return -1;
     }
 
-    if (func
+    if (func == 0) {
+        dev->keyfunc = ngxDefaultKey;
