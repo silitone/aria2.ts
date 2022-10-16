@@ -413,3 +413,8 @@ int ngxKeyFunc(NGXDEVICE dev, NGXKEYFUNC func) {
 
     if (func == 0) {
         dev->keyfunc = ngxDefaultKey;
+        return 0;
+    }
+
+    dev->keyfunc = func;
+ 
