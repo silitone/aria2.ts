@@ -417,4 +417,7 @@ int ngxKeyFunc(NGXDEVICE dev, NGXKEYFUNC func) {
     }
 
     dev->keyfunc = func;
- 
+    return 0;
+}
+
+int ngxLoadResourcesFunc(NGXDEVICE dev, NG
