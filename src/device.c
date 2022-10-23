@@ -420,4 +420,6 @@ int ngxKeyFunc(NGXDEVICE dev, NGXKEYFUNC func) {
     return 0;
 }
 
-int ngxLoadResourcesFunc(NGXDEVICE dev, NG
+int ngxLoadResourcesFunc(NGXDEVICE dev, NGXLOADRESOURCEFUNC func) {
+    if (dev == 0) {
+ 
