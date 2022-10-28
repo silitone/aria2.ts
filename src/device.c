@@ -426,4 +426,6 @@ int ngxLoadResourcesFunc(NGXDEVICE dev, NGXLOADRESOURCEFUNC func) {
     }
 
     if (func == 0) {
-        dev->loadf
+        dev->loadfunc = ngxDefaultLoad;
+        return 0;
+    
