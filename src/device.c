@@ -422,4 +422,8 @@ int ngxKeyFunc(NGXDEVICE dev, NGXKEYFUNC func) {
 
 int ngxLoadResourcesFunc(NGXDEVICE dev, NGXLOADRESOURCEFUNC func) {
     if (dev == 0) {
- 
+        return -1;
+    }
+
+    if (func == 0) {
+        dev->loadf
