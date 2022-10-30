@@ -428,4 +428,10 @@ int ngxLoadResourcesFunc(NGXDEVICE dev, NGXLOADRESOURCEFUNC func) {
     if (func == 0) {
         dev->loadfunc = ngxDefaultLoad;
         return 0;
-    
+    }
+
+    dev->loadfunc = func;
+    return 0;
+}
+
+int ngxP
