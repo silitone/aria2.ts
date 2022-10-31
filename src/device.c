@@ -434,4 +434,5 @@ int ngxLoadResourcesFunc(NGXDEVICE dev, NGXLOADRESOURCEFUNC func) {
     return 0;
 }
 
-int ngxP
+int ngxPointer(NGXDEVICE dev, void* ptr) {
+    if (dev == 
