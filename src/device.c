@@ -443,4 +443,7 @@ int ngxPointer(NGXDEVICE dev, void* ptr) {
     return 0;
 }
 
-int ngxSetPerspective(NGXDEVICE dev, 
+int ngxSetPerspective(NGXDEVICE dev, int enable) {
+    if (dev != 0) {
+        dev->persp = enable;
+  
