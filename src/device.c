@@ -440,4 +440,7 @@ int ngxPointer(NGXDEVICE dev, void* ptr) {
     }
 
     dev->ptr = ptr;
-   
+    return 0;
+}
+
+int ngxSetPerspective(NGXDEVICE dev, 
