@@ -452,4 +452,6 @@ int ngxSetPerspective(NGXDEVICE dev, int enable) {
 }
 
 int ngxSetResolution(NGXDEVICE dev, int width, int height) {
-    if (dev 
+    if (dev != 0) {
+        dev->width = width;
+        dev->h
