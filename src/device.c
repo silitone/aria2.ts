@@ -457,4 +457,5 @@ int ngxSetResolution(NGXDEVICE dev, int width, int height) {
         dev->height = height;
         return 0;
     }
-    r
+    return -1;
+}
