@@ -104,3 +104,50 @@ NGXENTRY ngxIndexFind(const NGXINDEX index, const char* key) {
     if (strcmp(index->entries[i].key, key) == 0){
       return (index->entries + i);
     }
+  }
+  return 0;
+}
+
+NGXENTRY ngxIndexInsert(NGXINDEX index, const char* key, uint16_t value) {
+  uint16_t size = 0;
+  NGXENTRY result = 0;
+
+  if (index == 0) {
+    return 0;
+  }
+
+  if (strlen(key) >= NGXINITSTLEN ){ // Need to check, because can't separate cases
+    return 0;
+  }
+
+  result = ngxIndexFind(index, key);
+  if (result != 0){ // Here can be too long str, or not found
+    return 0;
+  }
+
+  size = ngxIndexSize(index);
+  if (size == ngxIndexCap(index)){
+    uint16_t ncap = size + NGXINITAPPND;
+    NGXENTRY nitems = (NGXENTRY)calloc(ncap, sizeof(struct ngx_entry_t));
+    if (nitems == 0){
+      return 0;
+    }
+
+    memcpy(nitems, index->entries, sizeof(struct ngx_entry_t)*size);
+
+    for(int i = size; i < ncap; ++i){
+      nitems[i].value = 0xFFFF;
+    }
+    free(index->entries);
+    index->entries = nitems;
+    index->cap = ncap;
+  }
+  result = index->entries + size;
+  result->value = value;
+  strcpy(result->key, key);
+  index->size += 1;
+  return result;
+}
+
+int ngxIndexRemove(NGXINDEX index, NGXENTRY entry) {
+  int item = 0;
