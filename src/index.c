@@ -45,3 +45,62 @@ struct ngx_index_t {
 NGXINDEX ngxIndexInit(){
   NGXINDEX index = malloc(sizeof(struct ngx_index_t));
   if (index == 0){
+    return 0;
+  }
+
+  index->size = 0;
+  index->cap = NGXINITENTRY;
+  index->entries = (NGXENTRY)calloc(NGXINITENTRY, sizeof(struct ngx_entry_t));
+
+  if (index->entries == 0){
+    free(index);
+    return 0;
+  }
+
+  for (int i = 0; i < NGXINITENTRY; ++i){
+    index->entries[i].value = 0xFFFF;
+  }
+
+  return index;
+
+}
+
+void ngxIndexCleanup(NGXINDEX* pindex){
+  if ((pindex != 0) && (*pindex != 0)) {
+    free((*pindex)->entries);
+    free(*pindex);
+    *pindex = 0;
+  }
+}
+
+uint16_t ngxIndexSize(const NGXINDEX index){
+  if (index == 0){
+    return 0;
+  }
+  return index->size;
+}
+
+uint16_t ngxIndexCap(const NGXINDEX index){
+  if (index == 0){
+    return 0;
+  }
+  return index->cap;
+}
+
+NGXENTRY ngxIndexFind(const NGXINDEX index, const char* key) {
+  uint16_t size = 0;
+
+  if (index == 0){
+    return 0;
+  }
+
+  if (strlen(key) >= NGXINITSTLEN ){
+    return 0;
+  }
+
+  size = ngxIndexSize(index);
+
+  for (int i = 0; i < size; ++i){
+    if (strcmp(index->entries[i].key, key) == 0){
+      return (index->entries + i);
+    }
