@@ -151,3 +151,66 @@ NGXENTRY ngxIndexInsert(NGXINDEX index, const char* key, uint16_t value) {
 
 int ngxIndexRemove(NGXINDEX index, NGXENTRY entry) {
   int item = 0;
+
+  if (index == 0){
+    return -1;
+  }
+
+  if (entry == 0){
+    return -1;
+  }
+
+  item = entry - index->entries;
+
+  if (item >= ngxIndexSize(index)){
+    return -1;
+  }
+
+  index->size-=1;
+
+  entry->value = index->entries[index->size].value;
+  memcpy(entry->key, index->entries[index->size].key, NGXINITSTLEN);
+
+  index->entries[index->size].value = 0xFFFF;
+  index->entries[index->size].key[0] = 0;
+  return 0;
+}
+
+int ngxIndexErase(NGXINDEX index, const char* key) {
+  NGXENTRY item = 0;
+
+  if (index == 0){
+    return -1;
+  }
+
+  if (key == 0){
+    return -1;
+  }
+
+  item = ngxIndexFind(index, key);
+  if (item == 0){
+    return -1;
+  }
+
+  return ngxIndexRemove(index, item);
+}
+
+uint16_t ngxIndexSave(NGXARC arc, const NGXINDEX index, uint16_t loc){
+  struct ngx_findex_t* findex = 0;
+  uint16_t result = 0xFFFF;
+
+  if ((arc == 0) || (index == 0)){
+    return 0xFFFF;
+  }
+
+  findex = (struct ngx_findex_t*) malloc(
+    sizeof(struct ngx_findex_t) + sizeof(struct ngx_entry_t)*ngxIndexCap(index)
+  );
+  if (findex == 0){
+    return 0xFFFF;
+  }
+
+  memset(findex, 0x55, sizeof(struct ngx_findex_t));
+  findex->cap = ngxIndexCap(index);
+  findex->size = ngxIndexSize(index);
+  memcpy(
