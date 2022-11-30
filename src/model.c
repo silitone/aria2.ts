@@ -58,3 +58,55 @@ void ngxQuad(float x, float y, float w, float h) {
 
     glTexCoord2f(0.0f, 1.0f);
     glVertex3f(x, y + h, 0.0f);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(x, y, 0.0f);
+    glEnd();
+}
+
+void ngxSprite(float x, float y, float w, float h, const ngx_sprite_t* spr, int frame) {
+    int px = 0;
+    int py = 0;
+
+    if (spr == 0){
+        return;
+    }
+    
+    ngx_sprite_t temp;
+    temp.sx = (spr->sx == 0)?1:spr->sx;
+    temp.sy = (spr->sy == 0)?1:spr->sy;
+    
+    px = (frame%(temp.sx*temp.sy))%temp.sx;
+    py = (frame%(temp.sx*temp.sy))/temp.sx;
+    
+    double lx = 1.0/temp.sx;
+    double ly = 1.0/temp.sy;
+        
+    glBegin(GL_TRIANGLES);
+    glColor3f(1.0f, 1.0f, 1.0f);
+
+    glTexCoord2f(lx*px, ly*py);
+    glVertex3f(x, y, 0.0f);
+
+    glTexCoord2f(lx*(px+1), ly*py);
+    glVertex3f(x + w, y, 0.0f);
+
+    glTexCoord2f(lx*(px+1), ly*(py+1));
+    glVertex3f(x + w, y + h, 0.0f);
+
+    glTexCoord2f(lx*(px+1), ly*(py+1));
+    glVertex3f(x + w, y + h, 0.0f);
+
+    glTexCoord2f(lx*px, ly*(py+1));
+    glVertex3f(x, y + h, 0.0f);
+
+    glTexCoord2f(lx*px, ly*py);
+    glVertex3f(x, y, 0.0f);
+    glEnd();
+}
+
+void ngxLookAt(double eyeX, double eyeY, double eyeZ,
+        double centerX, double centerY, double centerZ,
+        double upX, double upY, double upZ) {
+    gluLookAt(eyeX, eyeY, eyeZ, centerX, centerY, centerZ, upX, upY, upZ);
+}
