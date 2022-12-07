@@ -110,3 +110,29 @@ void ngxLookAt(double eyeX, double eyeY, double eyeZ,
         double upX, double upY, double upZ) {
     gluLookAt(eyeX, eyeY, eyeZ, centerX, centerY, centerZ, upX, upY, upZ);
 }
+
+void ngxRotate(float angle, float x, float y, float z) {
+    glRotatef(angle, x, y, z);
+}
+
+void ngxTranslate(float x, float y, float z) {
+    glTranslatef(x, y, z);
+}
+
+unsigned int ngxTexture(int width, int height, const unsigned char* pixels) {
+    unsigned int result = 0;
+    glGenTextures(1, &result);
+    glBindTexture(GL_TEXTURE_2D, result);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, pixels);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    return result;
+}
+
+void ngxDeleteTexture(unsigned int tex) {
+    glDeleteTextures(1, &tex);
+}
+
+void ngxSetupTexture(unsigned int tex) {
+    glBindTexture(GL_TEXTURE_2D, tex);
+}
