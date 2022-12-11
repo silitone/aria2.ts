@@ -71,3 +71,23 @@ void test001(const char* fname){
 
   buf = (int*) ngxArcDataGet(arc, blkid, &len);
   EXPECT(buf != 0);
+
+  EXPECT(len == DLEN*sizeof(int));
+  EXPECT(memcmp(buf, ibuf, len) == 0);
+
+  free(buf);
+  free(ibuf);
+  ngxArcCleanup(&arc);
+}
+
+int main(int argc, char* argv[]){
+
+  if (argc != 2){
+    fprintf(stderr, "Usage: %s FILENAME\n", argv[0]);
+    return -1;
+  }
+
+  srand(time(0));
+  test000(argv[1]);
+  test001(argv[1]);
+}
