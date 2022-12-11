@@ -78,3 +78,25 @@ void test001(const char* fname){
   e = ngxIndexFind(nindex, "bac");
   EXPECT(e != 0);
   EXPECT(strcmp(ngxEntryKey(e), "bac") == 0);
+  EXPECT(ngxEntryValue(e) == 2);
+
+  e = ngxIndexFind(nindex, "bca");
+  EXPECT(e != 0);
+  EXPECT(strcmp(ngxEntryKey(e), "bca") == 0);
+  EXPECT(ngxEntryValue(e) == 3);
+
+  ngxIndexCleanup(&nindex);
+  ngxIndexCleanup(&index);
+  ngxArcCleanup(&arc);
+}
+
+int main(int argc, char* argv[]){
+
+  if (argc != 2){
+    fprintf(stderr, "Usage: %s FILENAME\n", argv[0]);
+    return -1;
+  }
+
+  test000();
+  test001(argv[1]);
+}
