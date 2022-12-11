@@ -1,2 +1,6 @@
 #include <data.h>
-#include <index
+#include <index.h>
+
+#include <stdio.h>
+#include <stdlib.h>
+#inc
