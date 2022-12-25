@@ -8,4 +8,6 @@
 #include <time.h>
 
 void* load(const char* fname, uint32_t* plen){
-  FILE* 
+  FILE* input = fopen(fname, "r");
+  int32_t len = 0;
+  voi
