@@ -24,4 +24,8 @@ void* load(const char* fname, uint32_t* plen){
   len = ftell(input);
 
   if (len < 0){
-  
+    fclose(input);
+    return 0;
+  }
+
+  result =
