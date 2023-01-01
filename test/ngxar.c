@@ -18,4 +18,10 @@ void* load(const char* fname, uint32_t* plen){
 
   if (fseek(input, 0, SEEK_END) != 0) {
     fclose(input);
-    return
+    return 0;
+  }
+
+  len = ftell(input);
+
+  if (len < 0){
+  
