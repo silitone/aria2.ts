@@ -10,4 +10,10 @@
 void* load(const char* fname, uint32_t* plen){
   FILE* input = fopen(fname, "r");
   int32_t len = 0;
-  voi
+  void* result = 0;
+
+  if (input == 0){
+    return 0;
+  }
+
+  if (fseek(in
