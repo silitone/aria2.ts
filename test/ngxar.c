@@ -16,4 +16,6 @@ void* load(const char* fname, uint32_t* plen){
     return 0;
   }
 
-  if (fseek(in
+  if (fseek(input, 0, SEEK_END) != 0) {
+    fclose(input);
+    return
