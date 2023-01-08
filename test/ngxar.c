@@ -28,4 +28,6 @@ void* load(const char* fname, uint32_t* plen){
     return 0;
   }
 
-  result =
+  result = malloc(len);
+  if (result == 0){
+    fclos
