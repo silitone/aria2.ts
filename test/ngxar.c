@@ -30,4 +30,8 @@ void* load(const char* fname, uint32_t* plen){
 
   result = malloc(len);
   if (result == 0){
-    fclos
+    fclose(input);
+    return 0;
+  }
+
+  if (fseek(input, 0, SEE
