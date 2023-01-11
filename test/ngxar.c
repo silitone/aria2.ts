@@ -36,4 +36,8 @@ void* load(const char* fname, uint32_t* plen){
 
   if (fseek(input, 0, SEEK_SET) != 0) {
     fclose(input);
-    free(resu
+    free(result);
+    return 0;
+  }
+
+  if (fread(result, 1,
