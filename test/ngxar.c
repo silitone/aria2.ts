@@ -42,4 +42,9 @@ void* load(const char* fname, uint32_t* plen){
 
   if (fread(result, 1, len, input) != len) {
     fclose(input);
-    free(res
+    free(result);
+    return 0;
+  }
+
+  fclose(input);
+  *plen = le
