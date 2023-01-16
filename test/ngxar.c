@@ -53,4 +53,8 @@ void* load(const char* fname, uint32_t* plen){
 
 int main(int argc, char* argv[]){
 
-  if
+  if (argc <= 2){
+    goto USAGE;
+  }
+
+  NGXARC arc = ngx
