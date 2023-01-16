@@ -57,4 +57,7 @@ int main(int argc, char* argv[]){
     goto USAGE;
   }
 
-  NGXARC arc = ngx
+  NGXARC arc = ngxArcInit(argv[1], 0);
+  if (arc == 0){
+    goto USAGE;
+  }
