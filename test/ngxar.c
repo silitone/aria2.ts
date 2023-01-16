@@ -47,4 +47,10 @@ void* load(const char* fname, uint32_t* plen){
   }
 
   fclose(input);
-  *plen = le
+  *plen = len;
+  return result;
+}
+
+int main(int argc, char* argv[]){
+
+  if
