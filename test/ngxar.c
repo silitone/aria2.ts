@@ -61,3 +61,6 @@ int main(int argc, char* argv[]){
   if (arc == 0){
     goto USAGE;
   }
+
+  NGXINDEX index = ngxIndexInit();
+  if (inde
