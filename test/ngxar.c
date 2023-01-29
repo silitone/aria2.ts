@@ -63,4 +63,9 @@ int main(int argc, char* argv[]){
   }
 
   NGXINDEX index = ngxIndexInit();
-  if (inde
+  if (index == 0){
+    ngxArcCleanup(&arc);
+    goto USAGE;
+  }
+
+ 
