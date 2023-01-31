@@ -70,4 +70,5 @@ int main(int argc, char* argv[]){
 
   uint16_t iblk = ngxIndexSave(arc, index, 0);
 
-  for (int i
+  for (int i = 2; i < argc; ++i){
+    fprintf(stderr
