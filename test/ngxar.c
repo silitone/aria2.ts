@@ -68,4 +68,6 @@ int main(int argc, char* argv[]){
     goto USAGE;
   }
 
- 
+  uint16_t iblk = ngxIndexSave(arc, index, 0);
+
+  for (int i
