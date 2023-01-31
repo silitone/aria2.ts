@@ -74,4 +74,6 @@ int main(int argc, char* argv[]){
     fprintf(stderr, "+ %s ", argv[i]);
     void* data = 0;
     uint32_t len = 0;
-    data 
+    data = load(argv[i], &len);
+    if (data != 0) {
+      uint16_t dblk
