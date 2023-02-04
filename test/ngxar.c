@@ -77,4 +77,6 @@ int main(int argc, char* argv[]){
     data = load(argv[i], &len);
     if (data != 0) {
       uint16_t dblk = ngxArcDataPut(arc, data, len, 0xFFFF);
-      if (db
+      if (dblk == 0xFFFF){
+        fprintf(stderr, "ERR\n");
+       
