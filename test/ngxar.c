@@ -83,4 +83,8 @@ int main(int argc, char* argv[]){
         continue;
       }
       ngxIndexInsert(index, argv[i], dblk);
-      fprintf(stderr
+      fprintf(stderr, "OK\n");
+    } else {
+      fprintf(stderr, "ERR\n");
+    }
+    fre
