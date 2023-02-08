@@ -82,4 +82,5 @@ int main(int argc, char* argv[]){
         free(data);
         continue;
       }
-      ngx
+      ngxIndexInsert(index, argv[i], dblk);
+      fprintf(stderr
