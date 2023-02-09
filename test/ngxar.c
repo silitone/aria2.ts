@@ -90,4 +90,7 @@ int main(int argc, char* argv[]){
     free(data);
   }
   ngxIndexSave(arc, index, 0);
-  return
+  return 0;
+
+USAGE:
+  printf("Usage: %s ARCHIVE FILES...", arg
