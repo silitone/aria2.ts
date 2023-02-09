@@ -93,4 +93,6 @@ int main(int argc, char* argv[]){
   return 0;
 
 USAGE:
-  printf("Usage: %s ARCHIVE FILES...", arg
+  printf("Usage: %s ARCHIVE FILES...", argv[0]);
+  return -1;
+}
