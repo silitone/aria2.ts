@@ -87,4 +87,7 @@ int main(int argc, char* argv[]){
     } else {
       fprintf(stderr, "ERR\n");
     }
-    fre
+    free(data);
+  }
+  ngxIndexSave(arc, index, 0);
+  return
