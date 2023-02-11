@@ -2,4 +2,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdi
+#include <stdint.h>
+#include <string.h>
+#include <time.h>
+
+i
