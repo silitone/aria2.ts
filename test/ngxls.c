@@ -15,4 +15,8 @@ int main(int argc, char* argv[]){
 
   NGXARC arc = ngxArcInit(argv[1], 1);
   if (arc == 0){
-    fprintf(stderr, "Can't open %s\
+    fprintf(stderr, "Can't open %s\n", argv[1]);
+    return -1;
+  }
+
+  uint16_t bsz = ng
