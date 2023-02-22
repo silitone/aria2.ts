@@ -19,4 +19,5 @@ int main(int argc, char* argv[]){
     return -1;
   }
 
-  uint16_t bsz = ng
+  uint16_t bsz = ngxArcBlockSize(arc);
+  uint16_t bcn = ngxArcBlo
