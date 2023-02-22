@@ -20,4 +20,7 @@ int main(int argc, char* argv[]){
   }
 
   uint16_t bsz = ngxArcBlockSize(arc);
-  uint16_t bcn = ngxArcBlo
+  uint16_t bcn = ngxArcBlockCount(arc);
+
+  printf("Block size: %u\n", bsz);
+  printf("Block co
