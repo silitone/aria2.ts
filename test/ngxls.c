@@ -23,4 +23,9 @@ int main(int argc, char* argv[]){
   uint16_t bcn = ngxArcBlockCount(arc);
 
   printf("Block size: %u\n", bsz);
-  printf("Block co
+  printf("Block count: %u\n", bcn);
+
+  ngxArcCleanup(&arc);
+  return 0;
+}
+
